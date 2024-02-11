@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프랙탈 솔루션</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link rel="stylesheet" href="assets/css/vendor/odometer.css">
+    <link rel="stylesheet" href="assets/css/vendor/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/reset.css">
+    <link rel="stylesheet" href="assets/css/ui.css">
+    <link rel="stylesheet" href="assets/css/pages.css">
+    <script src="assets/js/vendor/jquery-3.6.1.min.js"></script>
+    <script src="assets/js/vendor/swiper-bundle.min.js"></script>
+    <script src="assets/js/vendor/odometer.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+  </head>
+  <body ontouchstart>
+    <div id="app">
+
+      <!-- 인트로 페이지 -->
+      <div class="splash-view">
+        <figure class="logo-circle">
+          <img src="assets/images/logo/logo-symbol.png" alt="프랙탈 솔루션 로고 이미지" class="logo-img">
+        </figure>
+      </div>
+      <div class="intro-page l-page">
+        <div class="l-page-top"></div>
+
+        <!-- 페이지 내용 -->
+        <div class="l-page-mid">
+          <div class="l-page-content">
+            <section class="intro-section">
+              <figure class="logo-circle">
+                <img src="assets/images/logo/logo-symbol.png" alt="프랙탈 솔루션 로고 이미지" class="logo-img">
+                <span class="logo-circle-shadow"></span>
+              </figure>
+              <h1 class="ttl">Comfort & Ease</h1>
+              <p class="ttl-desc">국내 유일 주식/코인 AI 가격 예측 솔루션</p>
+            </section>
+          </div>
+        </div>
+
+        <!-- END 페이지 내용 -->
+        <div class="l-page-bottom">
+          <div class="page-btn-wrap">
+            <div id="swipe-button">
+              <span class="slide-bg"></span>
+              <span class="slide-text">서비스 둘러보기</span>
+              <div id="swipe-circle">
+                <img src="assets/images/icon/icon-arrow-right.svg" class="icon icon-28" alt="바로가기 아이콘">
+              </div>
+            </div>
+            <div class="opt-btns">
+              <button type="button" onclick="location.href='sign-in.html';" class="btn">로그인</button>
+              <button type="button" onclick="location.href='sign-up.html';" class="btn">회원가입</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- END 인트로 페이지 -->
+    </div>
+
+    <!-- 회원 전용 서비스 -->
+    <div id="user-modal" class="modal-wrapper">
+      <div class="modal-overlay" onclick="closeModal('user-modal');"></div>
+      <div class="custom-modal system-modal">
+        <div class="modal-icon">
+          <img src="assets/images/icon/icon-modal-checked.svg" alt="모달 아이콘" class="icon icon-32">
+        </div>
+        <div class="modal-content-wrap">
+          <h2 class="modal-ttl">회원 전용 서비스입니다</h2>
+          <div class="modal-content">
+            <p class="modal-ttl type-md">프렉탈 솔루션에 가입하시겠습니까?</p>
+            <p class="modal-desc">프렉탈 솔루션에 가입하셔서 <br>
+              누구보다 편안한 투자를 경험해보세요!</p>
+          </div>
+        </div>
+        <div class="modal-btn-wrap">
+          <button type="button" onclick="closeModal('user-modal');" class="btn gray-bd-btn">아니오</button>
+          <button type="button" onclick="location.href='sign-up.html';" class="btn theme-solid-btn">예</button>
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/ui.js"></script>
+    <script>
+      // https://codepen.io/huynhquocmy/details/xxxWWqG
+      var initialMouse = 0;
+      var slideMovementTotal = 0;
+      var mouseIsDown = false;
+      var slider = $('#swipe-circle');
+      var button = $('#swipe-button');
+      slider.on('mousedown touchstart', function(event) {
+        mouseIsDown = true;
+        slideMovementTotal = $('#swipe-button').width() - $(this).width() - 8;
+        initialMouse = event.clientX || event.originalEvent.touches[0].pageX;
+      });
+      $(document.body, '#slider').on('mouseup touchend', function(event) {
+        if (!mouseIsDown)
+          return;
+        mouseIsDown = false;
+        var currentMouse = event.clientX || event.changedTouches[0].pageX;
+        var relativeMouse = currentMouse - initialMouse;
+        if (relativeMouse < slideMovementTotal) {
+          $('.slide-text').fadeTo(300, 1);
+          $('.slide-bg').fadeTo(300, 0);
+          slider.animate({
+            left: "8px"
+          }, 300);
+          return;
+        }
+        slider.addClass('unlocked');
+        location.href = 'main.html';
+        setTimeout(function() {
+          button.addClass('bg-converted');
+        }, 250);
+        setTimeout(function() {
+          slider.on('click tap', function(event) {
+            if (!slider.hasClass('unlocked'))
+              return;
+            slider.removeClass('unlocked');
+            button.removeClass('bg-converted');
+            slider.off('click tap');
+          });
+        }, 0);
+      });
+      $(document.body).on('mousemove touchmove', function(event) {
+        if (!mouseIsDown)
+          return;
+        var currentMouse = event.clientX || event.originalEvent.touches[0].pageX;
+        var relativeMouse = currentMouse - initialMouse;
+        var slidePercent = 1 - (relativeMouse / slideMovementTotal);
+        $('.slide-text').fadeTo(0, slidePercent);
+        $('.slide-bg').fadeTo(1, relativeMouse / slideMovementTotal);
+        if (relativeMouse <= 0) {
+          slider.css({
+            'left': '8px'
+          });
+          return;
+        }
+        if (relativeMouse >= slideMovementTotal - 8) {
+          slider.css({
+            'left': slideMovementTotal + 'px'
+          });
+          return;
+        }
+        slider.css({
+          'left': relativeMouse + 8
+        });
+      });
+    </script>
+  </body>
+</html>

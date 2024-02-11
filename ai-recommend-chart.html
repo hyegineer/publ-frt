@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프랙탈 솔루션</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link rel="stylesheet" href="assets/css/vendor/odometer.css">
+    <link rel="stylesheet" href="assets/css/vendor/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/reset.css">
+    <link rel="stylesheet" href="assets/css/ui.css">
+    <link rel="stylesheet" href="assets/css/pages.css">
+    <script src="assets/js/vendor/jquery-3.6.1.min.js"></script>
+    <script src="assets/js/vendor/swiper-bundle.min.js"></script>
+    <script src="assets/js/vendor/odometer.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+  </head>
+  <body ontouchstart>
+    <div id="app">
+
+      <!-- AI추천 차트 페이지 -->
+      <div class="ai-recommend-chart-page chart-page l-page">
+        <div class="l-page-top">
+          <div class="header">
+            <button type="button" class="btn back-btn" onclick="history.back();">
+              <span class="txt-hidden">뒤로 가기</span>
+              <img src="assets/images/icon/icon-arrow-back-white.svg" alt="뒤로가기 아이콘" class="icon icon-22">
+            </button>
+          </div>
+        </div>
+
+        <!-- 페이지 내용 -->
+        <div class="l-page-mid">
+          <div class="l-page-content">
+            <div class="chart-container">
+              <h1 class="chart-ttl">삼성전자</h1>
+              <div class="chart-area">
+                <img src="assets/images/sample/img-sample-chart-bg.png" alt="" class="chart-img">
+              </div>
+            </div>
+            <div class="guide-ment-wrapper">
+              <div class="guide-ment">
+                <img src="assets/images/icon/icon-slide-arrow-left.svg" alt="화살표" class="icon icon-left">
+                <span class="txt">그래프를 밀어주세요</span>
+                <img src="assets/images/icon/icon-slide-arrow-right.svg" alt="화살표" class="icon icon-right">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- END 페이지 내용 -->
+        <div class="l-page-bottom">
+          <div class="info-white-box">
+            <div class="box-content">
+              <div class="js-circle">
+                <div class="bar"></div>
+                <div class="box">
+                  <span class="label">상승확률</span>
+                  <b class="percent red-txt">75%</b>
+                </div>
+              </div>
+              <div class="list-grp">
+                <dl class="detail-list">
+                  <dt class="ttl">20일 기대수익률</dt>
+                  <dd class="detail">
+                    <span class="red-txt">+ 00.00%</span>
+                  </dd>
+                </dl>
+                <dl class="detail-list">
+                  <dt class="ttl">리스크 전략</dt>
+                  <dd class="detail">
+                    57,000원 이탈시 <span class="blue-txt">매도</span>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+            <div class="box-btn-wrap type-space-around">
+              <button type="button" class="btn circle-btn">
+                <span class="circle">
+            <img src="assets/images/icon/icon-x.svg" alt="닫기 아이콘" class="icon icon-20">
+          </span>
+                <span class="txt">다른종목 보기</span>
+              </button>
+              <button type="button" class="btn circle-btn" onclick="location.href='detail-main.html';">
+                <span class="circle type-blue">
+            <img src="assets/images/icon/icon-search-white.svg" alt="닫기 아이콘" class="icon icon-20">
+          </span>
+                <span class="txt">상세보기</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- END AI추천 차트 페이지 -->
+    </div>
+
+    <!-- 회원 전용 서비스 -->
+    <div id="user-modal" class="modal-wrapper">
+      <div class="modal-overlay" onclick="closeModal('user-modal');"></div>
+      <div class="custom-modal system-modal">
+        <div class="modal-icon">
+          <img src="assets/images/icon/icon-modal-checked.svg" alt="모달 아이콘" class="icon icon-32">
+        </div>
+        <div class="modal-content-wrap">
+          <h2 class="modal-ttl">회원 전용 서비스입니다</h2>
+          <div class="modal-content">
+            <p class="modal-ttl type-md">프렉탈 솔루션에 가입하시겠습니까?</p>
+            <p class="modal-desc">프렉탈 솔루션에 가입하셔서 <br>
+              누구보다 편안한 투자를 경험해보세요!</p>
+          </div>
+        </div>
+        <div class="modal-btn-wrap">
+          <button type="button" onclick="closeModal('user-modal');" class="btn gray-bd-btn">아니오</button>
+          <button type="button" onclick="location.href='sign-up.html';" class="btn theme-solid-btn">예</button>
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/ui.js"></script>
+    <script>
+      // 예측률 써클
+      // https://kottenator.github.io/jquery-circle-progress/
+      let options = {
+        startAngle: -1.55,
+        value: 0.75,
+        size: 116,
+        lineCap: 'round',
+        fill: '#F5222D',
+        thickness: 10,
+        emptyFill: "#FAE9EA"
+      }
+      $('.js-circle .bar').circleProgress(options).on('circle-animation-progress', function(event, progress, stepValue) {
+        $(this).parent().find("b").text(Math.round(100 * stepValue) + "%");
+      });
+    </script>
+  </body>
+</html>

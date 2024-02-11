@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프랙탈 솔루션</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link rel="stylesheet" href="assets/css/vendor/odometer.css">
+    <link rel="stylesheet" href="assets/css/vendor/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/reset.css">
+    <link rel="stylesheet" href="assets/css/ui.css">
+    <link rel="stylesheet" href="assets/css/pages.css">
+    <script src="assets/js/vendor/jquery-3.6.1.min.js"></script>
+    <script src="assets/js/vendor/swiper-bundle.min.js"></script>
+    <script src="assets/js/vendor/odometer.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+  </head>
+  <body ontouchstart>
+    <div id="app">
+
+      <!-- 회원가입 페이지 -->
+      <div class="signup-page l-page">
+        <div class="l-page-top">
+          <header class="header">
+            <button type="button" class="btn back-btn" onclick="history.back();">
+              <span class="txt-hidden">뒤로 가기</span>
+              <img src="assets/images/icon/icon-arrow-back.svg" alt="뒤로가기 아이콘" class="icon icon-22">
+            </button>
+          </header>
+        </div>
+
+        <!-- 페이지 내용 -->
+        <div class="l-page-mid">
+          <div class="l-page-content">
+            <div class="left-title-wrap">
+              <h1 class="title">Comfort & Ease <br>회원가입</h1>
+              <p class="title-desc">회원 정보를 입력해주세요.</p>
+            </div>
+            <div class="form-item-grp">
+              <div class="form-item">
+                <label class="form-label">아이디</label>
+                <div class="form-inp-wrap">
+
+                  <!-- TODO: 틀렸을 시 type-warning 클래스가 추가됩니다. -->
+                  <input type="text" placeholder="아이디를 입력하세요" class="form-inp">
+
+                  <!-- TODO: 틀렸을 시 type-warning 클래스가 추가된 form-msg가 출력됩니다. -->
+
+                  <!-- <p class="form-msg type-warning">보조 텍스트</p> -->
+                </div>
+              </div>
+              <div class="form-item">
+                <label class="form-label">비밀번호</label>
+                <div class="form-inp-wrap">
+
+                  <!-- TODO: 틀렸을 시 type-warning 클래스가 추가됩니다. -->
+                  <input type="password" autocomplete="new-password" placeholder="비밀번호를 입력하세요" class="form-inp">
+
+                  <!-- TODO: 틀렸을 시 type-warning 클래스가 추가된 form-msg가 출력됩니다. -->
+
+                  <!-- <p class="form-msg type-warning">보조 텍스트</p> -->
+                </div>
+              </div>
+              <div class="form-item">
+                <label class="form-label">비밀번호 확인</label>
+                <div class="form-inp-wrap">
+
+                  <!-- TODO: 틀렸을 시 type-warning 클래스가 추가됩니다. -->
+                  <input type="password" autocomplete="new-password" placeholder="비밀번호를 재입력하세요" class="form-inp">
+
+                  <!-- TODO: 틀렸을 시 type-warning 클래스가 추가된 form-msg가 출력됩니다. -->
+
+                  <!-- <p class="form-msg type-warning">보조 텍스트</p> -->
+                </div>
+              </div>
+              <div class="form-item">
+                <label class="form-label">이름</label>
+                <div class="form-inp-wrap">
+
+                  <!-- TODO: 틀렸을 시 type-warning 클래스가 추가됩니다. -->
+                  <input type="text" placeholder="이름을 입력하세요" class="form-inp">
+
+                  <!-- TODO: 틀렸을 시 type-warning 클래스가 추가된 form-msg가 출력됩니다. -->
+
+                  <!-- <p class="form-msg type-warning">보조 텍스트</p> -->
+                </div>
+              </div>
+              <div class="form-item">
+                <label class="form-label">휴대폰번호</label>
+                <div class="form-inp-wrap">
+
+                  <!-- TODO: 틀렸을 시 type-warning 클래스가 추가됩니다. -->
+                  <input type="text" placeholder="숫자만 입력하세요" class="form-inp">
+
+                  <!-- TODO: 틀렸을 시 type-warning 클래스가 추가된 form-msg가 출력됩니다. -->
+
+                  <!-- <p class="form-msg type-warning">보조 텍스트</p> -->
+                </div>
+              </div>
+              <div class="form-item">
+                <label class="form-label">코드번호</label>
+                <div class="form-inp-wrap">
+
+                  <!-- TODO: 틀렸을 시 type-warning 클래스가 추가됩니다. -->
+                  <input type="text" placeholder="코드번호를 입력하세요" class="form-inp">
+
+                  <!-- TODO: 틀렸을 시 type-warning 클래스가 추가된 form-msg가 출력됩니다. -->
+
+                  <!-- <p class="form-msg type-warning">보조 텍스트</p> -->
+                </div>
+              </div>
+              <div class="form-item">
+                <label class="form-label">추가 입력란</label>
+                <div class="form-inp-wrap">
+
+                  <!-- TODO: 틀렸을 시 type-warning 클래스가 추가됩니다. -->
+                  <input type="text" placeholder="추가 입력란" class="form-inp type-warning">
+
+                  <!-- TODO: 틀렸을 시 type-warning 클래스가 추가된 form-msg가 출력됩니다. -->
+
+                  <!-- <p class="form-msg type-warning">보조 텍스트</p> -->
+                  <p class="form-msg type-warning">입력해야할 데이터에 대한 설명 문구</p>
+                </div>
+              </div>
+              <div class="form-item">
+                <label class="form-label">추가 입력란</label>
+                <div class="form-inp-wrap">
+
+                  <!-- TODO: 틀렸을 시 type-warning 클래스가 추가됩니다. -->
+                  <input type="text" placeholder="추가 입력란" class="form-inp">
+
+                  <!-- TODO: 틀렸을 시 type-warning 클래스가 추가된 form-msg가 출력됩니다. -->
+
+                  <!-- <p class="form-msg type-warning">보조 텍스트</p> -->
+                  <p class="form-msg">입력해야할 데이터에 대한 설명 문구</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- END 페이지 내용 -->
+        <div class="l-page-bottom">
+          <div class="page-btn-wrap">
+            <label class="checkbox-item">
+              <input id="agree" type="checkbox" class="checkbox-inp">
+              <label for="agree" class="checkbox"></label>
+              <span class="checkbox-txt">본 솔루션을 통한 투자의 책임은 본인에게 있습니다.</span>
+            </label>
+            <button type="button" onclick="location.href='main.html';" class="btn btn-w100 theme-solid-btn">회원가입 완료</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- END 회원가입 페이지 -->
+    </div>
+
+    <!-- 회원 전용 서비스 -->
+    <div id="user-modal" class="modal-wrapper">
+      <div class="modal-overlay" onclick="closeModal('user-modal');"></div>
+      <div class="custom-modal system-modal">
+        <div class="modal-icon">
+          <img src="assets/images/icon/icon-modal-checked.svg" alt="모달 아이콘" class="icon icon-32">
+        </div>
+        <div class="modal-content-wrap">
+          <h2 class="modal-ttl">회원 전용 서비스입니다</h2>
+          <div class="modal-content">
+            <p class="modal-ttl type-md">프렉탈 솔루션에 가입하시겠습니까?</p>
+            <p class="modal-desc">프렉탈 솔루션에 가입하셔서 <br>
+              누구보다 편안한 투자를 경험해보세요!</p>
+          </div>
+        </div>
+        <div class="modal-btn-wrap">
+          <button type="button" onclick="closeModal('user-modal');" class="btn gray-bd-btn">아니오</button>
+          <button type="button" onclick="location.href='sign-up.html';" class="btn theme-solid-btn">예</button>
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/ui.js"></script>
+  </body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프랙탈 솔루션</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link rel="stylesheet" href="assets/css/vendor/odometer.css">
+    <link rel="stylesheet" href="assets/css/vendor/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/reset.css">
+    <link rel="stylesheet" href="assets/css/ui.css">
+    <link rel="stylesheet" href="assets/css/pages.css">
+    <script src="assets/js/vendor/jquery-3.6.1.min.js"></script>
+    <script src="assets/js/vendor/swiper-bundle.min.js"></script>
+    <script src="assets/js/vendor/odometer.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+  </head>
+  <body ontouchstart>
+    <div id="app">
+
+      <!-- AI 예측 페이지 -->
+      <div class="ai-main-page l-page">
+        <div class="l-page-top">
+          <div class="header type-lg">
+            <h1 class="hd-title type-lg">AI 예측</h1>
+          </div>
+        </div>
+
+        <!-- 페이지 내용 -->
+        <div class="l-page-mid">
+          <div class="l-page-content">
+            <div class="box-grp">
+              <div class="shadow-box" onclick="location.href='ai-search-main.html';">
+                <img src="assets/images/icon/icon-ai-icon-01.svg" alt="종목/증시 예측 아이콘" class="icon icon-36">
+                <div class="ttl-wrap">
+                  <h3 class="ttl">종목/증시 예측</h3>
+                  <p class="ttl-desc">내가 원하는 종목 및 증시를 예측</p>
+                </div>
+                <div class="mg-left">
+                  <button type="button" class="btn">
+                    <span class="txt-hidden">바로 가기</span>
+                    <img src="assets/images/icon/icon-arrow-right-sm.svg" alt="바로 가기 아이콘" class="icon icon-24">
+                  </button>
+                </div>
+              </div>
+              <div class="shadow-box" onclick="location.href='ai-recommend-chart.html';">
+                <img src="assets/images/icon/icon-ai-icon-02.svg" alt="AI 추천 아이콘" class="icon icon-36">
+                <div class="ttl-wrap">
+                  <h3 class="ttl">AI 추천</h3>
+                  <p class="ttl-desc">국내 최고수준의 예측력으로 주가를 예측하여 추천</p>
+                </div>
+                <div class="mg-left">
+                  <button type="button" class="btn">
+                    <span class="txt-hidden">바로 가기</span>
+                    <img src="assets/images/icon/icon-arrow-right-sm.svg" alt="바로 가기 아이콘" class="icon icon-24">
+                  </button>
+                </div>
+              </div>
+              <div class="shadow-box" onclick="location.href='ai-investor-main.html';">
+                <img src="assets/images/icon/icon-ai-icon-03.svg" alt="세계 헤지펀드사 종목 예측 아이콘" class="icon icon-36">
+                <div class="ttl-wrap">
+                  <h3 class="ttl">세계 헤지펀드사 종목 예측</h3>
+                  <p class="ttl-desc">세계 유명한 투자자 포트폴리오의 주가를 예측</p>
+                </div>
+                <div class="mg-left">
+                  <button type="button" class="btn">
+                    <span class="txt-hidden">바로 가기</span>
+                    <img src="assets/images/icon/icon-arrow-right-sm.svg" alt="바로 가기 아이콘" class="icon icon-24">
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- END 페이지 내용 -->
+        <div class="l-page-bottom">
+          <div class="nav-btns">
+            <button type="button" class="nav-btn " onclick="location.href='main.html';">
+              <span class="icon-box">
+          <img src="assets/images/icon/icon-nav-home-on.svg" alt="홈 네비게이션 아이콘" class="icon icon-on">
+          <img src="assets/images/icon/icon-nav-home.svg" alt="홈 네비게이션 아이콘" class="icon icon-off">
+        </span>
+              <span class="txt">홈</span>
+            </button>
+            <button type="button" class="nav-btn active" onclick="location.href='ai-main.html';">
+              <span class="icon-box">
+          <img src="assets/images/icon/icon-nav-ai-on.svg" alt="AI 예측 네비게이션 아이콘" class="icon icon-on">
+          <img src="assets/images/icon/icon-nav-ai.svg" alt="AI 예측 네비게이션 아이콘" class="icon icon-off">
+        </span>
+              <span class="txt">AI 예측</span>
+            </button>
+            <button type="button" class="nav-btn " onclick="location.href='elliott-main.html';">
+              <span class="icon-box">
+          <img src="assets/images/icon/icon-nav-elliot-on.svg" alt="AI 예측 네비게이션 아이콘" class="icon icon-on">
+          <img src="assets/images/icon/icon-nav-elliot.svg" alt="AI 예측 네비게이션 아이콘" class="icon icon-off">
+        </span>
+              <span class="txt">엘리어트파동</span>
+            </button>
+            <button type="button" class="nav-btn " onclick="location.href='similarity-main.html';">
+              <span class="icon-box">
+          <img src="assets/images/icon/icon-nav-similar-on.svg" alt="AI 예측 네비게이션 아이콘" class="icon icon-on">
+          <img src="assets/images/icon/icon-nav-similar.svg" alt="AI 예측 네비게이션 아이콘" class="icon icon-off">
+        </span>
+              <span class="txt">유사도분석</span>
+            </button>
+            <button type="button" class="nav-btn " onclick="openModal('user-modal');">
+              <span class="icon-box">
+          <img src="assets/images/icon/icon-nav-my-on.svg" alt="AI 예측 네비게이션 아이콘" class="icon icon-on">
+          <img src="assets/images/icon/icon-nav-my.svg" alt="AI 예측 네비게이션 아이콘" class="icon icon-off">
+        </span>
+              <span class="txt">마이</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- END AI 예측 페이지 -->
+    </div>
+
+    <!-- 회원 전용 서비스 -->
+    <div id="user-modal" class="modal-wrapper">
+      <div class="modal-overlay" onclick="closeModal('user-modal');"></div>
+      <div class="custom-modal system-modal">
+        <div class="modal-icon">
+          <img src="assets/images/icon/icon-modal-checked.svg" alt="모달 아이콘" class="icon icon-32">
+        </div>
+        <div class="modal-content-wrap">
+          <h2 class="modal-ttl">회원 전용 서비스입니다</h2>
+          <div class="modal-content">
+            <p class="modal-ttl type-md">프렉탈 솔루션에 가입하시겠습니까?</p>
+            <p class="modal-desc">프렉탈 솔루션에 가입하셔서 <br>
+              누구보다 편안한 투자를 경험해보세요!</p>
+          </div>
+        </div>
+        <div class="modal-btn-wrap">
+          <button type="button" onclick="closeModal('user-modal');" class="btn gray-bd-btn">아니오</button>
+          <button type="button" onclick="location.href='sign-up.html';" class="btn theme-solid-btn">예</button>
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/ui.js"></script>
+  </body>
+</html>

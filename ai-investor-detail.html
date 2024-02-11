@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프랙탈 솔루션</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link rel="stylesheet" href="assets/css/vendor/odometer.css">
+    <link rel="stylesheet" href="assets/css/vendor/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/reset.css">
+    <link rel="stylesheet" href="assets/css/ui.css">
+    <link rel="stylesheet" href="assets/css/pages.css">
+    <script src="assets/js/vendor/jquery-3.6.1.min.js"></script>
+    <script src="assets/js/vendor/swiper-bundle.min.js"></script>
+    <script src="assets/js/vendor/odometer.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+  </head>
+  <body ontouchstart>
+    <div id="app">
+
+      <!-- 투자자 상세 페이지 -->
+      <div class="ai-investor-main-page l-page">
+        <div class="l-page-top">
+          <div class="header">
+            <button type="button" class="btn back-btn" onclick="location.href='ai-investor-main.html';">
+              <span class="txt-hidden">뒤로 가기</span>
+              <img src="assets/images/icon/icon-arrow-back.svg" alt="뒤로가기 아이콘" class="icon icon-22">
+            </button>
+            <h1 class="hd-title">최근 투자 종목</h1>
+          </div>
+        </div>
+
+        <!-- 페이지 내용 -->
+        <div class="l-page-mid">
+          <div class="l-page-content">
+            <div class="shadow-box">
+              <div class="user-item" onclick="location.href='ai-investor-detail.html';">
+                <figure class="thumbnail">
+                  <img src="assets/images/sample/img-sample-ali.png" alt="프로필 사진" class="thumbnail-img">
+                </figure>
+                <h3 class="name">Ali Morshediou</h3>
+                <div class="mg-left">
+                  <button type="button" class="btn arrow-btn">
+                    <span class="badge type-blue">12조원</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="chart-container">
+              <div class="chart-ttl-wrap">
+                <span class="gray-txt">23.06 기준</span>
+                <div class="search-bar-wrap type-select">
+                  <div class="select-bar">
+                    <span class="txt">애플 APPLE.INC</span>
+                    <img src="assets/images/icon/icon-select-arrow.svg" alt="종목 선택 아이콘" class="icon icon-12">
+                  </div>
+                  <div class="search-list-wrap">
+                    <ul class="search-list-box">
+                      <li class="search-list">
+                        종목명
+                      </li>
+                      <li class="search-list">
+                        종목명
+                      </li>
+                      <li class="search-list">
+                        종목명
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <h2 class="chart-ttl">999,999원</h2>
+              </div>
+              <div class="chart-area">
+                <img src="assets/images/sample/img-sample-chart.png" alt="차트 임시 이미지" class="chart-img">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- END 페이지 내용 -->
+        <div class="l-page-bottom">
+          <div class="info-white-box">
+            <div class="box-content">
+              <div class="js-circle">
+                <div class="bar"></div>
+                <div class="box">
+                  <span class="label">상승확률</span>
+                  <b class="percent red-txt">75%</b>
+                </div>
+              </div>
+              <div class="list-grp">
+                <dl class="detail-list">
+                  <dt class="ttl">20일 기대수익률</dt>
+                  <dd class="detail">
+                    <span class="red-txt">+ 00.00%</span>
+                  </dd>
+                </dl>
+                <dl class="detail-list">
+                  <dt class="ttl">리스크 전략</dt>
+                  <dd class="detail">
+                    57,000원 이탈시 <span class="blue-txt">매도</span>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+            <div class="box-btn-wrap">
+              <button type="button" onclick="location.href='detail-main.html';" class="btn btn-w100 theme-solid-btn">세부 예측 분석
+                확인</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- END 투자자 상세 페이지 -->
+    </div>
+
+    <!-- 회원 전용 서비스 -->
+    <div id="user-modal" class="modal-wrapper">
+      <div class="modal-overlay" onclick="closeModal('user-modal');"></div>
+      <div class="custom-modal system-modal">
+        <div class="modal-icon">
+          <img src="assets/images/icon/icon-modal-checked.svg" alt="모달 아이콘" class="icon icon-32">
+        </div>
+        <div class="modal-content-wrap">
+          <h2 class="modal-ttl">회원 전용 서비스입니다</h2>
+          <div class="modal-content">
+            <p class="modal-ttl type-md">프렉탈 솔루션에 가입하시겠습니까?</p>
+            <p class="modal-desc">프렉탈 솔루션에 가입하셔서 <br>
+              누구보다 편안한 투자를 경험해보세요!</p>
+          </div>
+        </div>
+        <div class="modal-btn-wrap">
+          <button type="button" onclick="closeModal('user-modal');" class="btn gray-bd-btn">아니오</button>
+          <button type="button" onclick="location.href='sign-up.html';" class="btn theme-solid-btn">예</button>
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/ui.js"></script>
+    <script src="assets/js/pages/searchBar.js"></script>
+    <script>
+      // 예측률 써클
+      // https://kottenator.github.io/jquery-circle-progress/
+      let options = {
+        startAngle: -1.55,
+        value: 0.75,
+        size: 116,
+        lineCap: 'round',
+        fill: '#F5222D',
+        thickness: 10,
+        emptyFill: "#FAE9EA"
+      }
+      $('.js-circle .bar').circleProgress(options).on('circle-animation-progress', function(event, progress, stepValue) {
+        $(this).parent().find("b").text(Math.round(100 * stepValue) + "%");
+      });
+    </script>
+  </body>
+</html>
