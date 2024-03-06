@@ -946,6 +946,10 @@
   letter-spacing: -0.21px;
 }
 
+.guide-table-wrap > h1 u {
+  text-decoration: line-through;
+}
+
 .guide-table-wrap {
   margin-bottom: 50px;
 }
@@ -1535,7 +1539,7 @@
   border-radius: 10px;
   padding: 18px 0;
   max-width: 400px;
-  width: 90%;
+  width: 100%;
 }
 .main-chart-card .box-ttl-wrap {
   margin-bottom: 1.4rem;
