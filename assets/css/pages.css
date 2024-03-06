@@ -1534,7 +1534,8 @@
   background-color: #F0F6FF;
   border-radius: 10px;
   padding: 18px 0;
-  max-width: 345px;
+  max-width: 400px;
+  width: 90%;
 }
 .main-chart-card .box-ttl-wrap {
   margin-bottom: 1.4rem;
