@@ -53,21 +53,39 @@
   <body ontouchstart>
     <div id="app">
 
-      <!-- 세부 분석 - 유사 패턴 확인 페이지 -->
+      <!-- 유사 패턴 확인 페이지 -->
       <div class="similarity-main-page l-page">
         <div class="l-page-top">
-          <div class="header">
-            <button type="button" class="btn back-btn" onclick="location.href='detail-main.html';">
-              <span class="txt-hidden">뒤로 가기</span>
-              <i class="ico ico-arrow-back"></i>
-            </button>
-            <h1 class="hd-title">유사 패턴 확인</h1>
+          <div class="header type-lg">
+            <h1 class="hd-title type-lg">유사도 분석</h1>
           </div>
         </div>
 
         <!-- 페이지 내용 -->
         <div class="l-page-mid">
           <div class="l-page-content">
+            <div class="search-bar-wrap">
+              <div class="search-bar">
+                <input type="text" placeholder="종목을 입력하세요." class="inp">
+                <button type="button" class="btn">
+                  <span class="txt-hidden">검색하기</span>
+                  <img src="assets/images/icon/icon-search.svg" alt="돋보기 아이콘" class="icon icon-20">
+                </button>
+              </div>
+              <div class="search-list-wrap">
+                <ul class="search-list-box">
+                  <li class="search-list">
+                    <span class="color-txt">검색어</span>입니다
+                  </li>
+                  <li class="search-list">
+                    <span class="color-txt">검색어</span>입니다
+                  </li>
+                  <li class="search-list">
+                    <span class="color-txt">검색어</span>입니다
+                  </li>
+                </ul>
+              </div>
+            </div>
             <section class="section section-01">
               <div class="period-box">
                 <div class="period-item">
@@ -122,10 +140,48 @@
         </div>
 
         <!-- END 페이지 내용 -->
-        <div class="l-page-bottom"></div>
+        <div class="l-page-bottom">
+          <div class="nav-btns">
+            <button type="button" class="nav-btn " onclick="location.href='main.html';">
+              <span class="icon-box">
+          <img src="assets/images/icon/icon-nav-home-on.svg" alt="홈 네비게이션 아이콘" class="icon icon-on">
+          <img src="assets/images/icon/icon-nav-home.svg" alt="홈 네비게이션 아이콘" class="icon icon-off">
+        </span>
+              <span class="txt">홈</span>
+            </button>
+            <button type="button" class="nav-btn " onclick="location.href='ai-main.html';">
+              <span class="icon-box">
+          <img src="assets/images/icon/icon-nav-ai-on.svg" alt="AI 예측 네비게이션 아이콘" class="icon icon-on">
+          <img src="assets/images/icon/icon-nav-ai.svg" alt="AI 예측 네비게이션 아이콘" class="icon icon-off">
+        </span>
+              <span class="txt">AI 예측</span>
+            </button>
+            <button type="button" class="nav-btn " onclick="location.href='';">
+              <span class="icon-box">
+          <i class="ico icon-on ico-like-list-on"></i>
+          <i class="ico icon-off ico-like-list"></i>
+        </span>
+              <span class="txt">관심종목</span>
+            </button>
+            <button type="button" class="nav-btn active" onclick="location.href='signal-main.html';">
+              <span class="icon-box">
+          <i class="ico icon-on ico-signal-on"></i>
+          <i class="ico icon-off ico-signal"></i>
+        </span>
+              <span class="txt">신호</span>
+            </button>
+            <button type="button" class="nav-btn " onclick="openModal('user-modal');">
+              <span class="icon-box">
+          <img src="assets/images/icon/icon-nav-my-on.svg" alt="AI 예측 네비게이션 아이콘" class="icon icon-on">
+          <img src="assets/images/icon/icon-nav-my.svg" alt="AI 예측 네비게이션 아이콘" class="icon icon-off">
+        </span>
+              <span class="txt">소통</span>
+            </button>
+          </div>
+        </div>
       </div>
 
-      <!-- END 세부 분석 - 유사 패턴 확인 페이지 -->
+      <!-- END 유사 패턴 확인 페이지 -->
     </div>
 
     <!-- 회원 전용 서비스 -->
@@ -150,6 +206,7 @@
       </div>
     </div>
     <script src="assets/js/ui.js"></script>
+    <script src="assets/js/pages/searchBar.js"></script>
     <script>
       // https://github.hubspot.com/odometer/
       var el01 = document.querySelector('#odometer01');

@@ -53,92 +53,57 @@
   <body ontouchstart>
     <div id="app">
 
-      <!-- 보유종목예측 검색 페이지 -->
-      <div class="ai-search-main-page l-page">
+      <!-- 메인 더보기 02: 인기종목 더보기 -->
+      <div class="main-more-02-page l-page">
         <div class="l-page-top">
           <div class="header">
             <button type="button" class="btn back-btn" onclick="history.back();">
               <span class="txt-hidden">뒤로 가기</span>
               <i class="ico ico-arrow-back"></i>
             </button>
-            <h1 class="hd-title">보유 종목 예측</h1>
           </div>
         </div>
 
         <!-- 페이지 내용 -->
         <div class="l-page-mid">
           <div class="l-page-content">
-            <section class="bd-section intro-section">
-              <h2 class="section-ttl">무엇을 분석해드릴까요?</h2>
-              <div class="search-bar-wrap">
-                <div class="search-bar">
-                  <input type="text" placeholder="종목을 입력하세요." class="inp">
-                  <button type="button" class="btn">
-                    <span class="txt-hidden">검색하기</span>
-                    <img src="assets/images/icon/icon-search.svg" alt="돋보기 아이콘" class="icon icon-26">
-                  </button>
-                </div>
-                <div class="search-list-wrap">
-                  <ul class="search-list-box">
-                    <li class="search-list" onclick="location.href='ai-search-chart.html';">
-                      <span class="color-txt">검색어</span>입니다
-                    </li>
-                    <li class="search-list" onclick="location.href='ai-search-chart.html';">
-                      <span class="color-txt">검색어</span>입니다
-                    </li>
-                    <li class="search-list" onclick="location.href='ai-search-chart.html';">
-                      <span class="color-txt">검색어</span>입니다
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="current-search-wrap">
-                <h2 class="title">사람들이 많이 보고 있어요</h2>
-                <div class="btn-grp">
-                  <button type="button" class="btn arrow-btn bd-arrow-btn">
-                    <span class="txt">삼성전자</span>
-                    <img src="assets/images/icon/icon-arrow-right-sm.svg" class="icon icon-16" alt="바로가기 아이콘">
-                  </button>
-                  <button type="button" class="btn arrow-btn bd-arrow-btn">
-                    <span class="txt">SK 하이닉스</span>
-                    <img src="assets/images/icon/icon-arrow-right-sm.svg" class="icon icon-16" alt="바로가기 아이콘">
-                  </button>
-                  <button type="button" class="btn arrow-btn bd-arrow-btn">
-                    <span class="txt">기아</span>
-                    <img src="assets/images/icon/icon-arrow-right-sm.svg" class="icon icon-16" alt="바로가기 아이콘">
-                  </button>
-                  <button type="button" class="btn arrow-btn bd-arrow-btn">
-                    <span class="txt">POSCO 홀딩스</span>
-                    <img src="assets/images/icon/icon-arrow-right-sm.svg" class="icon icon-16" alt="바로가기 아이콘">
-                  </button>
-                  <button type="button" class="btn arrow-btn bd-arrow-btn">
-                    <span class="txt">삼성전자</span>
-                    <img src="assets/images/icon/icon-arrow-right-sm.svg" class="icon icon-16" alt="바로가기 아이콘">
-                  </button>
-                  <button type="button" class="btn arrow-btn bd-arrow-btn">
-                    <span class="txt">SK 하이닉스</span>
-                    <img src="assets/images/icon/icon-arrow-right-sm.svg" class="icon icon-16" alt="바로가기 아이콘">
-                  </button>
-                  <button type="button" class="btn arrow-btn bd-arrow-btn">
-                    <span class="txt">기아</span>
-                    <img src="assets/images/icon/icon-arrow-right-sm.svg" class="icon icon-16" alt="바로가기 아이콘">
-                  </button>
-                  <button type="button" class="btn arrow-btn bd-arrow-btn">
-                    <span class="txt">POSCO 홀딩스</span>
-                    <img src="assets/images/icon/icon-arrow-right-sm.svg" class="icon icon-16" alt="바로가기 아이콘">
-                  </button>
-                </div>
-              </div>
-            </section>
+            <div class="page-title-wrap">
+              <h1 class="title">인기 종목 예측 현황</h1>
+              <p class="title-desc">현재 문의가 많은 종목이에요.</p>
+            </div>
             <section class="section">
-              <div onclick="location.href='ai-investor-main.html';" class="btn investor-direct-btn">
-                <div class="ttl-wrap">
-                  <h3 class="ttl">세계 헤지펀드사 종목 예측</h3>
-                  <p class="ttl-desc">세계 유명한 투자자 포트폴리오의 주가를 예측</p>
-                </div>
-                <i class="ico ico-arrow-blue"></i>
-              </div>
-              <img src="assets/images/img/img-ai-search-main.png" alt="보유종목 예측 이미지" class="page-img">
+              <ul class="list-item-grp">
+                <li class="list-item">
+                  <span class="badge type-hold">보유중</span>
+                  <h3 class="ttl">이수페타시스</h3>
+                  <button type="button" class="btn" onclick="location.href='detail-main.html';">
+
+                    <!-- TODO: 예측률 따라 양이면 type-red, 음이면 type-blue 클래스를 추가합니다 -->
+                    <span class="percent-txt type-blue">- 00.00%</span>
+                    <img src="assets/images/icon/icon-arrow-right-sm.svg" class="icon icon-16" alt="바로가기 아이콘">
+                  </button>
+                </li>
+                <li class="list-item">
+                  <span class="badge">관망중</span>
+                  <h3 class="ttl">센서뷰</h3>
+                  <button type="button" class="btn" onclick="location.href='detail-main.html';">
+
+                    <!-- TODO: 예측률 따라 양이면 type-red, 음이면 type-blue 클래스를 추가합니다 -->
+                    <span class="percent-txt type-red">+ 00.00%</span>
+                    <img src="assets/images/icon/icon-arrow-right-sm.svg" class="icon icon-16" alt="바로가기 아이콘">
+                  </button>
+                </li>
+                <li class="list-item">
+                  <span class="badge type-hold">보유중</span>
+                  <h3 class="ttl">어보브반도체</h3>
+                  <button type="button" class="btn" onclick="location.href='detail-main.html';">
+
+                    <!-- TODO: 예측률 따라 양이면 type-red, 음이면 type-blue 클래스를 추가합니다 -->
+                    <span class="percent-txt type-red">+ 00.00%</span>
+                    <img src="assets/images/icon/icon-arrow-right-sm.svg" class="icon icon-16" alt="바로가기 아이콘">
+                  </button>
+                </li>
+              </ul>
             </section>
           </div>
         </div>
@@ -147,7 +112,7 @@
         <div class="l-page-bottom"></div>
       </div>
 
-      <!-- END 보유종목예측 검색 페이지 -->
+      <!-- END 메인 더보기 02: 인기종목 더보기 -->
     </div>
 
     <!-- 회원 전용 서비스 -->
@@ -172,6 +137,5 @@
       </div>
     </div>
     <script src="assets/js/ui.js"></script>
-    <script src="assets/js/pages/searchBar.js"></script>
   </body>
 </html>

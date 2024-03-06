@@ -59,26 +59,95 @@
           <div class="header">
             <button type="button" class="btn back-btn" onclick="history.back();">
               <span class="txt-hidden">뒤로 가기</span>
-              <img src="assets/images/icon/icon-arrow-back.svg" alt="뒤로가기 아이콘" class="icon icon-22">
+              <i class="ico ico-arrow-back"></i>
             </button>
-            <h1 class="hd-title">삼성전자</h1>
-            <div class="mg-left">
-              <button type="button" class="btn" onclick="location.href='main.html';">
-                <span class="txt-hidden">홈으로 가기</span>
-                <img src="assets/images/icon/icon-home.svg" alt="홈 아이콘" class="icon icon-22">
-              </button>
-            </div>
+            <h1 class="hd-title">투자 하이라이트</h1>
           </div>
         </div>
 
         <!-- 페이지 내용 -->
         <div class="l-page-mid">
           <div class="l-page-content">
-            <section class="section-bd point-section">
+            <section class="section main-section">
+              <div class="main-ttl-wrap">
+                <div class="ttl-row">
+                  <b class="ttl type-md">현대차</b>
+                  <span class="ttl-desc">005380</span>
+                </div>
+                <div class="ttl-row">
+                  <b class="ttl type-lg">252,500원</b>
+                  <span class="ttl-desc">02.16</span>
+                </div>
+                <div class="ttl-row">
+
+                  <!-- TODO: red-txt or blue-txt -->
+                  <b class="sub-txt red-txt">▲&nbsp;12,500</b>
+
+                  <!-- TODO: type-red or type-blue -->
+                  <b class="badge type-red">5.21%</b>
+                </div>
+              </div>
+              <div class="section-content">
+                <div class="btn-grp">
+                  <button type="button" class="btn gray-bd-btn">종목 예측 내역 보기</button>
+                  <button type="button" class="btn gray-bd-btn">기업개요 읽기</button>
+                </div>
+                <div class="main-info-card">
+                  <div class="card-content">
+
+                    <!-- TODO: 보유중일 경우 -->
+                    <div class="circle type-hold">
+                      <span class="txt">보유중</span>
+                    </div>
+
+                    <!-- TODO: 관망중일 경우 -->
+
+                    <!-- <div class="circle">
+                <span class="txt">관망중</span>
+              </div> -->
+                    <div class="mg-left">
+                      <div class="detail-list-grp">
+                        <dl class="detail-list">
+                          <dt class="ttl">수익률</dt>
+                          <dt class="detail-sm">
+
+                            <!-- TODO: red-txt or blue-txt -->
+                            <b class="red-txt lg-txt">+5.87%</b>
+                          </dt>
+                        </dl>
+                      </div>
+                      <div class="detail-list-grp">
+                        <dl class="detail-list">
+                          <dt class="ttl">보유</dt>
+                          <dt class="detail-sm">
+                            <b class="dark-txt">7</b>일째
+                          </dt>
+                        </dl>
+                        <dl class="detail-list">
+                          <dt class="ttl">매수가</dt>
+                          <dt class="detail-sm">
+                            <b class="dark-txt">238,500</b>원
+                          </dt>
+                        </dl>
+                        <dl class="detail-list">
+                          <dt class="ttl">발생</dt>
+                          <dt class="detail-sm">
+                            <b class="dark-txt">2024.02.05 15:00</b>
+                          </dt>
+                        </dl>
+                      </div>
+                    </div>
+                  </div>
+                  <button type="button" class="btn theme-solid-btn btn-w100">AI 매매 신호 받기</button>
+                </div>
+              </div>
+            </section>
+            <section class="bd-section point-section">
 
               <!-- 섹션 제목 -->
               <div class="section-ttl-wrap">
                 <h3 class="section-ttl">핵심 투자포인트</h3>
+                <p class="section-ttl-desc">AI매매는 핵심투자포인트를 기반합니다.</p>
               </div>
 
               <!-- END 섹션 제목 -->
@@ -92,10 +161,14 @@
                   </div>
                   <div class="point-box">
                     <span class="num">2</span>
-                    <p class="txt">24년 1분기 실적 어닝 서프라이즈</p>
+                    <p class="txt">정부 저 PBR 제고 정책</p>
                   </div>
                   <div class="point-box">
                     <span class="num">3</span>
+                    <p class="txt">24년 1분기 실적 어닝 서프라이즈</p>
+                  </div>
+                  <div class="point-box">
+                    <span class="num">4</span>
                     <p class="txt">외국인 매수세 대폭 확대</p>
                   </div>
                 </div>
@@ -103,226 +176,610 @@
 
               <!-- END 섹션 내용 -->
             </section>
-            <section class="section-bd">
+            <section class="bd-section">
 
               <!-- 섹션 제목 -->
-              <div class="section-ttl-wrap">
-                <h3 class="section-ttl">예측 결과</h3>
+              <div class="section-ttl-wrap type-center ">
+                <div class="section-ttl-item">
+                  <h3 class="section-ttl type-lg">AI 기술종합 분석</h3>
+                  <span class="badge type-blue">국내 유일 기술력</span>
+                </div>
+                <p class="section-ttl-desc type-red type-lg">종목에 영향을 주는 모든 변수를 고려합니다.</p>
               </div>
 
               <!-- END 섹션 제목 -->
 
               <!-- 섹션 내용 -->
               <div class="section-content">
-                <div id="tabs01-btns" class="tabs">
-                  <button type="button" data-tab="tab01" class="tab active">유사도 분석</button>
-                  <button type="button" data-tab="tab02" class="tab">엘리어트 파동 분석</button>
-                </div>
-                <div id="tabs01" class="tab-content-container">
-
-                  <!-- 유사도 분석 탭 내용 -->
-                  <div id="tab01" class="tab-content active">
-                    <div class="result-container">
-                      <div class="chart-area">
-                        <img src="assets/images/sample/img-sample-chart.png" alt="차트 임시 이미지" class="chart-img">
-                      </div>
-                      <div class="info-white-box">
-                        <div class="box-content">
-                          <div class="js-circle">
-                            <div class="bar"></div>
-                            <div class="box">
-                              <span class="label">상승확률</span>
-                              <b class="percent red-txt">75%</b>
-                            </div>
-                          </div>
-                          <ul class="gage-list-grp">
-                            <li class="gage-list">
-                              <h3 class="ttl">종목</h3>
-                              <div class="gage-boxes">
-                                <div class="gage-box"></div>
-                                <div class="gage-box"></div>
-                                <div class="gage-box"></div>
-                                <div class="gage-box"></div>
-                                <div class="gage-box active"></div>
-                              </div>
-                            </li>
-                            <li class="gage-list">
-                              <h3 class="ttl">환율</h3>
-                              <div class="gage-boxes">
-                                <div class="gage-box"></div>
-                                <div class="gage-box"></div>
-                                <div class="gage-box"></div>
-                                <div class="gage-box active"></div>
-                                <div class="gage-box "></div>
-                              </div>
-                            </li>
-                            <li class="gage-list">
-                              <h3 class="ttl">증시</h3>
-                              <div class="gage-boxes">
-                                <div class="gage-box"></div>
-                                <div class="gage-box"></div>
-                                <div class="gage-box active"></div>
-                                <div class="gage-box"></div>
-                                <div class="gage-box"></div>
-                              </div>
-                            </li>
-                            <li class="gage-list">
-                              <h3 class="ttl">업종</h3>
-                              <div class="gage-boxes">
-                                <div class="gage-box"></div>
-                                <div class="gage-box active"></div>
-                                <div class="gage-box"></div>
-                                <div class="gage-box"></div>
-                                <div class="gage-box"></div>
-                              </div>
-                            </li>
-                          </ul>
+                <div class="result-container">
+                  <div class="chart-area">
+                    <img src="assets/images/sample/img-sample-chart.png" alt="차트 임시 이미지" class="chart-img">
+                  </div>
+                  <div class="info-white-box">
+                    <div class="box-content">
+                      <div class="js-circle">
+                        <div class="bar"></div>
+                        <div class="box">
+                          <span class="label">상승확률</span>
+                          <b class="percent red-txt">75%</b>
                         </div>
                       </div>
-                      <div class="detail-list-grp">
-                        <dl class="detail-list">
-                          <dt class="ttl">20일 기대수익률</dt>
-                          <dd class="detail">
-                            <span class="red-txt">+ 00.00%</span>
-                          </dd>
-                        </dl>
-                        <dl class="detail-list">
-                          <dt class="ttl">리스크 전략</dt>
-                          <dd class="detail">
-                            57,000원 이탈시 <span class="blue-txt">매도</span>
-                          </dd>
-                        </dl>
-                      </div>
-                      <div class="btn-wrap">
-                        <button type="button" class="btn btn-w100 gray-bd-btn" onclick="location.href='detail-similarity-main.html';">
-                          <span class="txt">유사패턴 확인</span>
-                          <img src="assets/images/icon/icon-arrow-right-dark.svg" alt="바로 가기 아이콘" class="icon icon-20">
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- END 유사도 분석 탭 내용 -->
-
-                  <!-- 엘리어트 파동 분석 탭 내용 -->
-                  <div id="tab02" class="tab-content">
-                    <div class="result-container">
-                      <div class="chart-area">
-                        <img src="assets/images/sample/img-sample-chart.png" alt="차트 임시 이미지" class="chart-img">
-                      </div>
-                      <div class="info-white-box">
-                        <div class="box-content">
-                          <div class="js-circle">
-                            <div class="bar"></div>
-                            <div class="box">
-                              <span class="label">상승확률</span>
-                              <b class="percent red-txt">75%</b>
-                            </div>
+                      <ul class="gage-list-grp">
+                        <li class="gage-list">
+                          <h3 class="ttl">종목</h3>
+                          <div class="gage-boxes">
+                            <div class="gage-box"></div>
+                            <div class="gage-box"></div>
+                            <div class="gage-box"></div>
+                            <div class="gage-box"></div>
+                            <div class="gage-box active"></div>
                           </div>
-                          <ul class="gage-list-grp">
-                            <li class="gage-list">
-                              <h3 class="ttl">종목</h3>
-                              <div class="gage-boxes">
-                                <div class="gage-box"></div>
-                                <div class="gage-box"></div>
-                                <div class="gage-box"></div>
-                                <div class="gage-box"></div>
-                                <div class="gage-box active"></div>
-                              </div>
-                            </li>
-                            <li class="gage-list">
-                              <h3 class="ttl">환율</h3>
-                              <div class="gage-boxes">
-                                <div class="gage-box"></div>
-                                <div class="gage-box"></div>
-                                <div class="gage-box"></div>
-                                <div class="gage-box active"></div>
-                                <div class="gage-box "></div>
-                              </div>
-                            </li>
-                            <li class="gage-list">
-                              <h3 class="ttl">증시</h3>
-                              <div class="gage-boxes">
-                                <div class="gage-box"></div>
-                                <div class="gage-box"></div>
-                                <div class="gage-box active"></div>
-                                <div class="gage-box"></div>
-                                <div class="gage-box"></div>
-                              </div>
-                            </li>
-                            <li class="gage-list">
-                              <h3 class="ttl">업종</h3>
-                              <div class="gage-boxes">
-                                <div class="gage-box active"></div>
-                                <div class="gage-box"></div>
-                                <div class="gage-box"></div>
-                                <div class="gage-box"></div>
-                                <div class="gage-box"></div>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="detail-list-grp">
-                        <dl class="detail-list">
-                          <dt class="ttl">20일 기대수익률</dt>
-                          <dd class="detail">
-                            <span class="red-txt">+ 00.00%</span>
-                          </dd>
-                        </dl>
-                        <dl class="detail-list">
-                          <dt class="ttl">리스크 전략</dt>
-                          <dd class="detail">
-                            57,000원 이탈시 <span class="blue-txt">매도</span>
-                          </dd>
-                        </dl>
-                      </div>
-                      <div class="btn-wrap">
-                        <button type="button" class="btn btn-w100 gray-bd-btn" onclick="location.href='detail-elliott-main.html';">
-                          <span class="txt">파동 카운팅 확인</span>
-                          <img src="assets/images/icon/icon-arrow-right-dark.svg" alt="바로 가기 아이콘" class="icon icon-20">
-                        </button>
-                      </div>
+                        </li>
+                        <li class="gage-list">
+                          <h3 class="ttl">환율</h3>
+                          <div class="gage-boxes">
+                            <div class="gage-box"></div>
+                            <div class="gage-box"></div>
+                            <div class="gage-box"></div>
+                            <div class="gage-box active"></div>
+                            <div class="gage-box "></div>
+                          </div>
+                        </li>
+                        <li class="gage-list">
+                          <h3 class="ttl">증시</h3>
+                          <div class="gage-boxes">
+                            <div class="gage-box"></div>
+                            <div class="gage-box"></div>
+                            <div class="gage-box active"></div>
+                            <div class="gage-box"></div>
+                            <div class="gage-box"></div>
+                          </div>
+                        </li>
+                        <li class="gage-list">
+                          <h3 class="ttl">업종</h3>
+                          <div class="gage-boxes">
+                            <div class="gage-box"></div>
+                            <div class="gage-box active"></div>
+                            <div class="gage-box"></div>
+                            <div class="gage-box"></div>
+                            <div class="gage-box"></div>
+                          </div>
+                        </li>
+                      </ul>
                     </div>
                   </div>
-
-                  <!-- END 엘리어트 파동 분석 탭 내용 -->
+                  <div class="btn-wrap">
+                    <button type="button" class="btn btn-w100 gray-bd-btn" onclick="location.href='detail-similarity-main.html';">
+                      <span class="txt">유사패턴 확인</span>
+                      <i class="ico ico-arrow-right-sm-gray"></i>
+                    </button>
+                  </div>
                 </div>
               </div>
 
               <!-- END 섹션 내용 -->
             </section>
-            <section class="section-bd">
+            <section class="bd-section">
 
               <!-- 섹션 제목 -->
-              <div class="section-ttl-wrap">
-                <h3 class="section-ttl">실적 현황</h3>
+              <div class="section-ttl-wrap type-center type-mbnarrow">
+                <h3 class="section-ttl type-lg">종목이슈</h3>
               </div>
 
               <!-- END 섹션 제목 -->
 
               <!-- 섹션 내용 -->
               <div class="section-content">
-                <div class="chart-area">
-                  <img src="assets/images/sample/img-sample-chart.png" alt="차트 임시 이미지" class="chart-img">
+                <div class="badge-btn-grp">
+                  <button type="button" class="btn badge-btn active">#HBM</button>
+                  <button type="button" class="btn badge-btn">#반도체</button>
+                  <button type="button" class="btn badge-btn">#LPCAMM</button>
+                  <button type="button" class="btn badge-btn">#이미지센서</button>
+                </div>
+                <div class="detail-card">
+                  <div class="card-ttl-wrap">
+                    <h3 class="card-ttl">HBM</h3>
+                    <span class="card-date-txt">2024/02/29</span>
+                  </div>
+                  <p class="news-txt">삼성전자가 7년 동안 이어진 사법 리스크에 발이 묶인 동안, 글로벌 주요 반도체 경쟁사들은 발 빠르게 움직이며 세계 시장에서 영향력을 확대하고 있다. 대만
+                    TSMC는 반도체 파운드리(위탁 생산) 분야 선두를 확고히 다졌고, 미국 인텔과 일본 라피더스 등 후발 주자는 국가적 지원을 받아 삼성전자를 거세게 추격하고 있다. 2030년까지 메모리
+                    반도체와 파운드리를 포함한 시스템 반도체 모두에서 글로벌 1위를 목표로 하고 있는 삼성전자가 직면한 경쟁이 한층 치열해졌다는 평가가 나온다.</p>
                 </div>
               </div>
 
               <!-- END 섹션 내용 -->
             </section>
-            <section class="section-bd">
+            <section class="bd-section">
 
               <!-- 섹션 제목 -->
-              <div class="section-ttl-wrap">
-                <h3 class="section-ttl">수급 현황</h3>
+              <div class="section-ttl-wrap type-center type-bd">
+                <h3 class="section-ttl type-lg">실적분석</h3>
               </div>
 
               <!-- END 섹션 제목 -->
 
               <!-- 섹션 내용 -->
               <div class="section-content">
-                <div class="chart-area">
-                  <img src="assets/images/sample/img-sample-chart.png" alt="차트 임시 이미지" class="chart-img">
+                <div class="inner-content-row">
+                  <div class="section-ttl-wrap type-center type-mbnarrow">
+                    <h3 class="section-ttl">재무성적</h3>
+                    <p class="section-ttl-desc type-red">영업이익과 주가의 상관성이 높은 기업입니다.</p>
+                  </div>
+                  <div class="inner-content">
+                    <div id="tabs01" class="tabs type-01">
+                      <button type="button" data-tab="tab01" class="btn tab active">분기</button>
+                      <button type="button" data-tab="tab02" class="btn tab">연간</button>
+                    </div>
+                    <div id="tabs01-contents" class="tab-content-container">
+
+                      <!-- 분기성적 -->
+                      <div id="tab01" class="tab-content active">
+                        <div class="inner-chart-area">
+                          분기 성적
+                        </div>
+                        <div class="chart-swiper-container">
+                          <div class="swiper swiper-01">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                <div class="detail-card">
+                                  <h3 class="card-ttl">2023년</h3>
+                                  <div class="detail-list-grp">
+                                    <dl class="detail-list">
+                                      <dt class="ttl">매출액</dt>
+                                      <dd class="detail">
+                                        <b class="dark-txt">75조 4,800억</b>
+
+                                        <!-- TODO: blue-txt or red-txt -->
+                                        <span class="blue-txt">(YoY - 12.80%)</span>
+                                      </dd>
+                                    </dl>
+                                    <dl class="detail-list">
+                                      <dt class="ttl">영업이익</dt>
+                                      <dd class="detail">
+                                        <b class="dark-txt">9.1조</b>
+
+                                        <!-- TODO: blue-txt or red-txt -->
+                                        <span class="red-txt">(YoY - 26.80%)</span>
+                                      </dd>
+                                    </dl>
+                                    <dl class="detail-list">
+                                      <dt class="ttl">당기순이익</dt>
+                                      <dd class="detail">
+                                        <b class="dark-txt">7.2조</b>
+
+                                        <!-- TODO: blue-txt or red-txt -->
+                                        <span class="red-txt">(YoY - 12.80%)</span>
+                                      </dd>
+                                    </dl>
+                                    <dl class="detail-list">
+                                      <dt class="ttl">영업이익률</dt>
+                                      <dd class="detail">
+                                        <b class="dark-txt">+ 12.11%</b>
+                                      </dd>
+                                    </dl>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="detail-card">
+                                  <h3 class="card-ttl">2023년</h3>
+                                  <div class="detail-list-grp">
+                                    <dl class="detail-list">
+                                      <dt class="ttl">매출액</dt>
+                                      <dd class="detail">
+                                        <b class="dark-txt">75조 4,800억</b>
+
+                                        <!-- TODO: blue-txt or red-txt -->
+                                        <span class="blue-txt">(YoY - 12.80%)</span>
+                                      </dd>
+                                    </dl>
+                                    <dl class="detail-list">
+                                      <dt class="ttl">영업이익</dt>
+                                      <dd class="detail">
+                                        <b class="dark-txt">9.1조</b>
+
+                                        <!-- TODO: blue-txt or red-txt -->
+                                        <span class="red-txt">(YoY - 26.80%)</span>
+                                      </dd>
+                                    </dl>
+                                    <dl class="detail-list">
+                                      <dt class="ttl">당기순이익</dt>
+                                      <dd class="detail">
+                                        <b class="dark-txt">7.2조</b>
+
+                                        <!-- TODO: blue-txt or red-txt -->
+                                        <span class="red-txt">(YoY - 12.80%)</span>
+                                      </dd>
+                                    </dl>
+                                    <dl class="detail-list">
+                                      <dt class="ttl">영업이익률</dt>
+                                      <dd class="detail">
+                                        <b class="dark-txt">+ 12.11%</b>
+                                      </dd>
+                                    </dl>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="detail-card">
+                                  <h3 class="card-ttl">2023년</h3>
+                                  <div class="detail-list-grp">
+                                    <dl class="detail-list">
+                                      <dt class="ttl">매출액</dt>
+                                      <dd class="detail">
+                                        <b class="dark-txt">75조 4,800억</b>
+
+                                        <!-- TODO: blue-txt or red-txt -->
+                                        <span class="blue-txt">(YoY - 12.80%)</span>
+                                      </dd>
+                                    </dl>
+                                    <dl class="detail-list">
+                                      <dt class="ttl">영업이익</dt>
+                                      <dd class="detail">
+                                        <b class="dark-txt">9.1조</b>
+
+                                        <!-- TODO: blue-txt or red-txt -->
+                                        <span class="red-txt">(YoY - 26.80%)</span>
+                                      </dd>
+                                    </dl>
+                                    <dl class="detail-list">
+                                      <dt class="ttl">당기순이익</dt>
+                                      <dd class="detail">
+                                        <b class="dark-txt">7.2조</b>
+
+                                        <!-- TODO: blue-txt or red-txt -->
+                                        <span class="red-txt">(YoY - 12.80%)</span>
+                                      </dd>
+                                    </dl>
+                                    <dl class="detail-list">
+                                      <dt class="ttl">영업이익률</dt>
+                                      <dd class="detail">
+                                        <b class="dark-txt">+ 12.11%</b>
+                                      </dd>
+                                    </dl>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- END 분기성적 -->
+
+                      <!-- 연간성적 -->
+                      <div id="tab02" class="tab-content">
+                        <div class="inner-chart-area">
+                          연간 성적
+                        </div>
+                        <div class="chart-swiper-container">
+                          <div class="swiper swiper-02">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                <div class="detail-card">
+                                  <h3 class="card-ttl">2023년</h3>
+                                  <div class="detail-list-grp">
+                                    <dl class="detail-list">
+                                      <dt class="ttl">매출액</dt>
+                                      <dd class="detail">
+                                        <b class="dark-txt">75조 4,800억</b>
+
+                                        <!-- TODO: blue-txt or red-txt -->
+                                        <span class="blue-txt">(YoY - 12.80%)</span>
+                                      </dd>
+                                    </dl>
+                                    <dl class="detail-list">
+                                      <dt class="ttl">영업이익</dt>
+                                      <dd class="detail">
+                                        <b class="dark-txt">9.1조</b>
+
+                                        <!-- TODO: blue-txt or red-txt -->
+                                        <span class="red-txt">(YoY - 26.80%)</span>
+                                      </dd>
+                                    </dl>
+                                    <dl class="detail-list">
+                                      <dt class="ttl">당기순이익</dt>
+                                      <dd class="detail">
+                                        <b class="dark-txt">7.2조</b>
+
+                                        <!-- TODO: blue-txt or red-txt -->
+                                        <span class="red-txt">(YoY - 12.80%)</span>
+                                      </dd>
+                                    </dl>
+                                    <dl class="detail-list">
+                                      <dt class="ttl">영업이익률</dt>
+                                      <dd class="detail">
+                                        <b class="dark-txt">+ 12.11%</b>
+                                      </dd>
+                                    </dl>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="detail-card">
+                                  <h3 class="card-ttl">2023년</h3>
+                                  <div class="detail-list-grp">
+                                    <dl class="detail-list">
+                                      <dt class="ttl">매출액</dt>
+                                      <dd class="detail">
+                                        <b class="dark-txt">75조 4,800억</b>
+
+                                        <!-- TODO: blue-txt or red-txt -->
+                                        <span class="blue-txt">(YoY - 12.80%)</span>
+                                      </dd>
+                                    </dl>
+                                    <dl class="detail-list">
+                                      <dt class="ttl">영업이익</dt>
+                                      <dd class="detail">
+                                        <b class="dark-txt">9.1조</b>
+
+                                        <!-- TODO: blue-txt or red-txt -->
+                                        <span class="red-txt">(YoY - 26.80%)</span>
+                                      </dd>
+                                    </dl>
+                                    <dl class="detail-list">
+                                      <dt class="ttl">당기순이익</dt>
+                                      <dd class="detail">
+                                        <b class="dark-txt">7.2조</b>
+
+                                        <!-- TODO: blue-txt or red-txt -->
+                                        <span class="red-txt">(YoY - 12.80%)</span>
+                                      </dd>
+                                    </dl>
+                                    <dl class="detail-list">
+                                      <dt class="ttl">영업이익률</dt>
+                                      <dd class="detail">
+                                        <b class="dark-txt">+ 12.11%</b>
+                                      </dd>
+                                    </dl>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="detail-card">
+                                  <h3 class="card-ttl">2023년</h3>
+                                  <div class="detail-list-grp">
+                                    <dl class="detail-list">
+                                      <dt class="ttl">매출액</dt>
+                                      <dd class="detail">
+                                        <b class="dark-txt">75조 4,800억</b>
+
+                                        <!-- TODO: blue-txt or red-txt -->
+                                        <span class="blue-txt">(YoY - 12.80%)</span>
+                                      </dd>
+                                    </dl>
+                                    <dl class="detail-list">
+                                      <dt class="ttl">영업이익</dt>
+                                      <dd class="detail">
+                                        <b class="dark-txt">9.1조</b>
+
+                                        <!-- TODO: blue-txt or red-txt -->
+                                        <span class="red-txt">(YoY - 26.80%)</span>
+                                      </dd>
+                                    </dl>
+                                    <dl class="detail-list">
+                                      <dt class="ttl">당기순이익</dt>
+                                      <dd class="detail">
+                                        <b class="dark-txt">7.2조</b>
+
+                                        <!-- TODO: blue-txt or red-txt -->
+                                        <span class="red-txt">(YoY - 12.80%)</span>
+                                      </dd>
+                                    </dl>
+                                    <dl class="detail-list">
+                                      <dt class="ttl">영업이익률</dt>
+                                      <dd class="detail">
+                                        <b class="dark-txt">+ 12.11%</b>
+                                      </dd>
+                                    </dl>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- END 연간성적 -->
+                    </div>
+                  </div>
+                </div>
+                <div class="inner-content-row">
+                  <div class="section-ttl-wrap type-center type-mbnarrow">
+                    <h3 class="section-ttl">기업 주요 지표</h3>
+                  </div>
+                  <div class="inner-content">
+                    <div id="tabs02" class="tabs type-01">
+                      <button type="button" data-tab="tab02-01" class="btn tab active">PER</button>
+                      <button type="button" data-tab="tab02-02" class="btn tab">PBR</button>
+                      <button type="button" data-tab="tab02-03" class="btn tab">EPS</button>
+                      <button type="button" data-tab="tab02-04" class="btn tab">ROE</button>
+                      <button type="button" data-tab="tab02-05" class="btn tab">EV/EBITDA</button>
+                      <button type="button" data-tab="tab02-06" class="btn tab">PEGR</button>
+                    </div>
+                    <div id="tabs02-contents" class="tab-content-container">
+
+                      <!-- PER -->
+                      <div id="tab02-01" class="tab-content active">
+                        <div class="inner-chart-area">PER내용</div>
+                        <div class="chart-swiper-container">
+                          <div class="swiper">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                <div class="detail-card">
+                                  <h3 class="card-ttl">주요 지표 비교</h3>
+                                  <div class="tbl type-02">
+                                    <div class="tbl-head">
+                                      <ul class="tr">
+                                        <li class="th"></li>
+                                        <li class="th">현대차</li>
+                                        <li class="th">업종평균</li>
+                                        <li class="th">업종 내 순위</li>
+                                      </ul>
+                                    </div>
+                                    <div class="tbl-body">
+                                      <ul class="tr">
+                                        <li class="td ta-left">
+                                          <b class="dark-txt">PER</b>
+                                        </li>
+                                        <li class="td">
+                                          <b class="dark-txt">5.77</b>
+                                        </li>
+                                        <li class="td">
+                                          <b class="dark-txt">10.77</b>
+                                        </li>
+                                        <li class="td">
+                                          <b class="dark-txt">30위</b>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- END PER -->
+
+                      <!-- PBR -->
+                      <div id="tab02-02" class="tab-content">
+                        PBR 내용
+                      </div>
+
+                      <!-- END PBR -->
+
+                      <!-- EPS -->
+                      <div id="tab02-03" class="tab-content">
+                        EPS 내용
+                      </div>
+
+                      <!-- END EPS -->
+
+                      <!-- ROE -->
+                      <div id="tab02-04" class="tab-content">
+                        ROE 내용
+                      </div>
+
+                      <!-- END ROE -->
+
+                      <!-- EV/EBITDA -->
+                      <div id="tab02-05" class="tab-content">
+                        EV/EBITDA 내용
+                      </div>
+
+                      <!-- END EV/EBITDA -->
+
+                      <!-- PEGR -->
+                      <div id="tab02-06" class="tab-content">
+                        PEGR 내용
+                      </div>
+
+                      <!-- END PEGR -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- END 섹션 내용 -->
+            </section>
+            <section class="bd-section">
+
+              <!-- 섹션 제목 -->
+              <div class="section-ttl-wrap type-center type-mbnarrow">
+                <h3 class="section-ttl type-lg">수급현황</h3>
+              </div>
+
+              <!-- END 섹션 제목 -->
+
+              <!-- 섹션 내용 -->
+              <div class="section-content">
+                <div id="tabs03" class="tabs type-02">
+                  <button type="button" data-tab="tab03-01" class="tab active">누적 매매</button>
+                  <button type="button" data-tab="tab03-02" class="tab">매매 동향</button>
+                </div>
+                <div id="tabs03-contents" class="tab-content-container">
+
+                  <!-- 누적 매매 -->
+                  <div id="tab03-01" class="tab-content active">
+                    <div id="tabs0301" class="tabs type-01 type-center type-red">
+                      <button data-tab="tab0301-01" type="button" class="tab active">외국인</button>
+                      <button data-tab="tab0301-02" type="button" class="tab">기관</button>
+                      <button data-tab="tab0301-03" type="button" class="tab">개인</button>
+                    </div>
+                    <div id="tabs0301-contents" class="tab-content-container">
+                      <div id="tab0301-01" class="tab-content active">
+                        <div class="info-txt">
+                          <span class="txt">외인보유률</span>
+                          <b class="red-txt">36.88%</b>
+                        </div>
+                        <div class="inner-chart-area">
+                          누적 매매 외국인
+                        </div>
+                      </div>
+                      <div id="tab0301-02" class="tab-content">
+                        <div class="info-txt">
+                          <span class="txt">기관보유률</span>
+                          <b class="red-txt">36.88%</b>
+                        </div>
+                        <div class="inner-chart-area">
+                          누적 매매 기관
+                        </div>
+                      </div>
+                      <div id="tab0301-03" class="tab-content">
+                        <div class="info-txt">
+                          <span class="txt">개인보유률</span>
+                          <b class="red-txt">36.88%</b>
+                        </div>
+                        <div class="inner-chart-area">
+                          누적 매매 개인
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- END 누적 매매 -->
+
+                  <!-- 매매 동향 -->
+                  <div id="tab03-02" class="tab-content">
+                    <div id="tabs0302" class="tabs type-01 type-center type-red">
+                      <button data-tab="tab0302-01" type="button" class="tab active">외국인</button>
+                      <button data-tab="tab0302-02" type="button" class="tab">기관</button>
+                      <button data-tab="tab0302-03" type="button" class="tab">개인</button>
+                    </div>
+                    <div id="tabs0302-contents" class="tab-content-container">
+                      <div id="tab0302-01" class="tab-content active">
+                        <div class="info-txt">
+                          <span class="txt">외인보유률</span>
+                          <b class="red-txt">36.88%</b>
+                        </div>
+                        <div class="inner-chart-area">
+                          매매 동향 외국인
+                        </div>
+                      </div>
+                      <div id="tab0302-02" class="tab-content">
+                        <div class="info-txt">
+                          <span class="txt">기관보유률</span>
+                          <b class="red-txt">36.88%</b>
+                        </div>
+                        <div class="inner-chart-area">
+                          매매 동향 기관
+                        </div>
+                      </div>
+                      <div id="tab0302-03" class="tab-content">
+                        <div class="info-txt">
+                          <span class="txt">개인보유률</span>
+                          <b class="red-txt">36.88%</b>
+                        </div>
+                        <div class="inner-chart-area">
+                          개인 동향 기관
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- END 매매 동향 -->
                 </div>
               </div>
 
@@ -381,9 +838,9 @@
         var thisBtns = $(this).parent('.tabs').attr('id');
         var thisContent = $(this).attr('data-tab');
         var thisContents = $(`#${thisContent}`).parent('.tab-content-container').attr('id');
-        $(`#${thisBtns} [data-tab]`).removeClass('active');
+        $(`#${thisBtns} > [data-tab]`).removeClass('active');
         $(this).addClass('active');
-        $(`#${thisContents} .tab-content`).removeClass('active');
+        $(`#${thisContents} > .tab-content`).removeClass('active');
         $(`#${thisContent}`).addClass('active');
       })
     </script>

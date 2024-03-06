@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="343" height="148" viewBox="0 0 343 148">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_193" data-name="사각형 193" width="343" height="148" transform="translate(69 288)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="사각형_176" data-name="사각형 176" width="55" height="65" transform="translate(250 312)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="마스크_그룹_12" data-name="마스크 그룹 12" transform="translate(-69 -288)" clip-path="url(#clip-path)">
+    <g id="그룹_313" data-name="그룹 313" transform="translate(51.447)">
+      <g id="그룹_311" data-name="그룹 311">
+        <path id="패스_350" data-name="패스 350" d="M1203.16,1562.305c.539-1.434,11.552-25.844,22.1-20.593s12.185,15.874,18.635,17.16,7.843-7.986,13.036-6.865,4.423,14.912,11.407,12.73,6.976-.463,13.457,0,8.581-5.52,15.051-4.1,7.788,4.884,10.54,2.65,7.425-20.449,16.649-14.178,10.387,10.172,15.1,4.118,14.311-26.468,20.669-22.316,11.736,11.742,15.364,8.956,15.482-35.426,23.767-32.254,7.729,6.148,10.831,4.328.28-12.844,5.721-9.76,5.053,6.154,9.115,5.432,2.24-9.522,7.545-9.353,21.092,21.5,23.7,18.275.558-8.3,6.584-7.585,21.528,22.485,24.746,19.728,1.633-7.942,8.077-6.367,10.88,14.99,14.442,12.417,6.008-10.346,10.832-6.05,5.4,15.127,10.707,13.032,7.812-4.407,12.879,0" transform="matrix(0.999, 0.035, -0.035, 0.999, -1130.257, -1223.337)" fill="none" stroke="#ff6565" stroke-width="2"/>
+        <line id="선_64" data-name="선 64" y2="99.375" transform="translate(82.5 312.108)" fill="none" stroke="#b2b9c6" stroke-width="1" stroke-dasharray="2"/>
+        <text id="_22.10.28" data-name="22.10.28" transform="translate(34 433)" fill="#b2b9c6" font-size="12" font-family="Pretendard-Medium, Pretendard" font-weight="500" letter-spacing="-0.011em"><tspan x="0" y="0">22.10.28</tspan></text>
+        <text id="상승_예측" data-name="상승 예측" transform="translate(60 299)" fill="#3f434a" font-size="12" font-family="Pretendard-SemiBold, Pretendard" font-weight="600" letter-spacing="-0.011em"><tspan x="0" y="0">상승 예측</tspan></text>
+        <text id="_22.10.28-2" data-name="22.10.28" transform="translate(121 433)" fill="#b2b9c6" font-size="12" font-family="Pretendard-Medium, Pretendard" font-weight="500" letter-spacing="-0.011em"><tspan x="0" y="0">22.10.28</tspan></text>
+        <text id="_22.10.28-3" data-name="22.10.28" transform="translate(208 433)" fill="#b2b9c6" font-size="12" font-family="Pretendard-Medium, Pretendard" font-weight="500" letter-spacing="-0.011em"><tspan x="0" y="0">22.10.28</tspan></text>
+        <text id="_22.10.28-4" data-name="22.10.28" transform="translate(295 433)" fill="#b2b9c6" font-size="12" font-family="Pretendard-Medium, Pretendard" font-weight="500" letter-spacing="-0.011em"><tspan x="0" y="0">22.10.28</tspan></text>
+        <line id="선_66" data-name="선 66" y2="99.375" transform="translate(249.5 312.108)" fill="none" stroke="#b2b9c6" stroke-width="1" stroke-dasharray="2"/>
+        <line id="선_67" data-name="선 67" y2="99.375" transform="translate(304.5 312.108)" fill="none" stroke="#b2b9c6" stroke-width="1" stroke-dasharray="2"/>
+        <g id="타원_44" data-name="타원 44" transform="translate(245 321)" fill="#5d83ff" stroke="rgba(93,131,255,0.18)" stroke-width="5">
+          <circle cx="4.5" cy="4.5" r="4.5" stroke="none"/>
+          <circle cx="4.5" cy="4.5" r="7" fill="none"/>
+        </g>
+        <text id="하락_예측" data-name="하락 예측" transform="translate(228 299)" fill="#3f434a" font-size="12" font-family="Pretendard-SemiBold, Pretendard" font-weight="600" letter-spacing="-0.011em"><tspan x="0" y="0">하락 예측</tspan></text>
+        <g id="마스크_그룹_7" data-name="마스크 그룹 7" clip-path="url(#clip-path-2)">
+          <path id="패스_361" data-name="패스 361" d="M1203.16,1562.305c.539-1.434,11.552-25.844,22.1-20.593s12.185,15.874,18.635,17.16,7.843-7.986,13.036-6.865,4.423,14.912,11.407,12.73,6.976-.463,13.457,0,8.581-5.52,15.051-4.1,7.788,4.884,10.54,2.65,7.425-20.449,16.649-14.178,10.387,10.172,15.1,4.118,14.311-26.468,20.669-22.316,11.736,11.742,15.364,8.956,15.482-35.426,23.767-32.254,7.729,6.148,10.831,4.328.28-12.844,5.721-9.76,5.053,6.154,9.115,5.432,2.24-9.522,7.545-9.353,21.092,21.5,23.7,18.275.558-8.3,6.584-7.585,21.528,22.485,24.746,19.728,1.633-7.942,8.077-6.367,10.88,14.99,14.442,12.417,6.008-10.346,10.832-6.05,5.4,15.127,10.707,13.032,7.812-4.407,12.879,0" transform="matrix(0.999, 0.035, -0.035, 0.999, -1130.257, -1223.337)" fill="none" stroke="#5d83ff" stroke-width="2"/>
+        </g>
+      </g>
+      <g id="타원_43" data-name="타원 43" transform="translate(78 379)" fill="#ff6565" stroke="rgba(255,101,101,0.18)" stroke-width="5">
+        <circle cx="4.5" cy="4.5" r="4.5" stroke="none"/>
+        <circle cx="4.5" cy="4.5" r="7" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -53,101 +53,109 @@
   <body ontouchstart>
     <div id="app">
 
-      <!-- 보유종목예측 검색 페이지 -->
-      <div class="ai-search-main-page l-page">
+      <!-- 메인 더보기 01: 예측결과 내역보기 차트 -->
+      <div class="main-more-01-chart-page chart-page l-page">
         <div class="l-page-top">
           <div class="header">
             <button type="button" class="btn back-btn" onclick="history.back();">
               <span class="txt-hidden">뒤로 가기</span>
-              <i class="ico ico-arrow-back"></i>
+              <i class="ico ico-arrow-back-white"></i>
             </button>
-            <h1 class="hd-title">보유 종목 예측</h1>
           </div>
         </div>
 
         <!-- 페이지 내용 -->
         <div class="l-page-mid">
           <div class="l-page-content">
-            <section class="bd-section intro-section">
-              <h2 class="section-ttl">무엇을 분석해드릴까요?</h2>
-              <div class="search-bar-wrap">
-                <div class="search-bar">
-                  <input type="text" placeholder="종목을 입력하세요." class="inp">
-                  <button type="button" class="btn">
-                    <span class="txt-hidden">검색하기</span>
-                    <img src="assets/images/icon/icon-search.svg" alt="돋보기 아이콘" class="icon icon-26">
-                  </button>
+            <div class="chart-container">
+              <h1 class="chart-ttl">삼성전자</h1>
+              <div class="chart-area">
+                <img src="assets/images/sample/img-sample-chart-bg.png" alt="" class="chart-img">
+              </div>
+            </div>
+            <section class="section circle-section">
+              <div class="circle-wrap">
+                <div class="js-circle js-circle-01">
+                  <div class="bar"></div>
+                  <div class="box">
+                    <b class="percent orange-txt">75%</b>
+                  </div>
                 </div>
-                <div class="search-list-wrap">
-                  <ul class="search-list-box">
-                    <li class="search-list" onclick="location.href='ai-search-chart.html';">
-                      <span class="color-txt">검색어</span>입니다
+                <span class="circle-txt">예측 적중률</span>
+              </div>
+              <div class="circle-wrap">
+                <div class="js-circle js-circle-02">
+                  <div class="bar"></div>
+                  <div class="box">
+                    <b class="percent red-txt">100%</b>
+                  </div>
+                </div>
+                <span class="circle-txt">가장 높은 수익률</span>
+              </div>
+              <div class="circle-wrap">
+                <div class="custom-circle">
+                  <b class="txt">35회</b>
+                </div>
+                <span class="circle-txt">가장 높은 수익률</span>
+              </div>
+            </section>
+            <section class="section period-section">
+              <div class="section-ttl-wrap">
+                <h3 class="section-ttl">매매기간</h3>
+              </div>
+              <div class="section-content">
+                <p class="txt">2014.10.20~2020.02.16</p>
+              </div>
+            </section>
+            <section class="section full-section">
+              <div class="tbl type-01">
+                <div class="tbl-head">
+                  <ul class="tr">
+                    <li class="th ta-left">날짜</li>
+                    <li class="th">구분</li>
+                    <li class="th">가격</li>
+                    <li class="th">수익률</li>
+                  </ul>
+                </div>
+                <div class="tbl-body">
+                  <ul class="tr">
+                    <li class="td ta-left">
+                      <span class="gray-txt">2024.02.05</span>
                     </li>
-                    <li class="search-list" onclick="location.href='ai-search-chart.html';">
-                      <span class="color-txt">검색어</span>입니다
+                    <li class="td">
+                      <b class="red-txt">매수</b>
                     </li>
-                    <li class="search-list" onclick="location.href='ai-search-chart.html';">
-                      <span class="color-txt">검색어</span>입니다
+                    <li class="td ta-right">
+                      <b class="dark-txt">238,500</b>
+                    </li>
+                    <li class="td ta-right">
+                      <b class="red-txt">+5.3%</b>
+                    </li>
+                  </ul>
+                  <ul class="tr">
+                    <li class="td ta-left">
+                      <span class="gray-txt">2024.02.05</span>
+                    </li>
+                    <li class="td">
+                      <b class="blue-txt">매도</b>
+                    </li>
+                    <li class="td ta-right">
+                      <b class="dark-txt">238,500</b>
+                    </li>
+                    <li class="td ta-right">
+                      <b class="blue-txt">-5%</b>
                     </li>
                   </ul>
                 </div>
               </div>
-              <div class="current-search-wrap">
-                <h2 class="title">사람들이 많이 보고 있어요</h2>
-                <div class="btn-grp">
-                  <button type="button" class="btn arrow-btn bd-arrow-btn">
-                    <span class="txt">삼성전자</span>
-                    <img src="assets/images/icon/icon-arrow-right-sm.svg" class="icon icon-16" alt="바로가기 아이콘">
-                  </button>
-                  <button type="button" class="btn arrow-btn bd-arrow-btn">
-                    <span class="txt">SK 하이닉스</span>
-                    <img src="assets/images/icon/icon-arrow-right-sm.svg" class="icon icon-16" alt="바로가기 아이콘">
-                  </button>
-                  <button type="button" class="btn arrow-btn bd-arrow-btn">
-                    <span class="txt">기아</span>
-                    <img src="assets/images/icon/icon-arrow-right-sm.svg" class="icon icon-16" alt="바로가기 아이콘">
-                  </button>
-                  <button type="button" class="btn arrow-btn bd-arrow-btn">
-                    <span class="txt">POSCO 홀딩스</span>
-                    <img src="assets/images/icon/icon-arrow-right-sm.svg" class="icon icon-16" alt="바로가기 아이콘">
-                  </button>
-                  <button type="button" class="btn arrow-btn bd-arrow-btn">
-                    <span class="txt">삼성전자</span>
-                    <img src="assets/images/icon/icon-arrow-right-sm.svg" class="icon icon-16" alt="바로가기 아이콘">
-                  </button>
-                  <button type="button" class="btn arrow-btn bd-arrow-btn">
-                    <span class="txt">SK 하이닉스</span>
-                    <img src="assets/images/icon/icon-arrow-right-sm.svg" class="icon icon-16" alt="바로가기 아이콘">
-                  </button>
-                  <button type="button" class="btn arrow-btn bd-arrow-btn">
-                    <span class="txt">기아</span>
-                    <img src="assets/images/icon/icon-arrow-right-sm.svg" class="icon icon-16" alt="바로가기 아이콘">
-                  </button>
-                  <button type="button" class="btn arrow-btn bd-arrow-btn">
-                    <span class="txt">POSCO 홀딩스</span>
-                    <img src="assets/images/icon/icon-arrow-right-sm.svg" class="icon icon-16" alt="바로가기 아이콘">
-                  </button>
-                </div>
-              </div>
-            </section>
-            <section class="section">
-              <div onclick="location.href='ai-investor-main.html';" class="btn investor-direct-btn">
-                <div class="ttl-wrap">
-                  <h3 class="ttl">세계 헤지펀드사 종목 예측</h3>
-                  <p class="ttl-desc">세계 유명한 투자자 포트폴리오의 주가를 예측</p>
-                </div>
-                <i class="ico ico-arrow-blue"></i>
-              </div>
-              <img src="assets/images/img/img-ai-search-main.png" alt="보유종목 예측 이미지" class="page-img">
             </section>
           </div>
         </div>
 
         <!-- END 페이지 내용 -->
-        <div class="l-page-bottom"></div>
       </div>
 
-      <!-- END 보유종목예측 검색 페이지 -->
+      <!-- END 메인 더보기 01: 예측결과 내역보기 차트 -->
     </div>
 
     <!-- 회원 전용 서비스 -->
@@ -172,6 +180,33 @@
       </div>
     </div>
     <script src="assets/js/ui.js"></script>
-    <script src="assets/js/pages/searchBar.js"></script>
+    <script>
+      // 예측률 써클
+      // https://kottenator.github.io/jquery-circle-progress/
+      let option01 = {
+        startAngle: -1.55,
+        value: 0.86,
+        size: 85,
+        lineCap: 'round',
+        fill: '#F55B22',
+        thickness: 10,
+        emptyFill: "#FFF3EE"
+      }
+      let option02 = {
+        startAngle: -1.55,
+        value: 0.99,
+        size: 85,
+        lineCap: 'round',
+        fill: '#F5222D',
+        thickness: 10,
+        emptyFill: "#FEE8E9"
+      }
+      $('.js-circle-01 .bar').circleProgress(option01).on('circle-animation-progress', function(event, progress, stepValue) {
+        $(this).parent().find("b").text(Math.round(100 * stepValue) + "%");
+      });
+      $('.js-circle-02 .bar').circleProgress(option02).on('circle-animation-progress', function(event, progress, stepValue) {
+        $(this).parent().find("b").text(Math.round(100 * stepValue) + "%");
+      });
+    </script>
   </body>
 </html>

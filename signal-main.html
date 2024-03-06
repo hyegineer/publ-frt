@@ -53,88 +53,79 @@
   <body ontouchstart>
     <div id="app">
 
-      <!-- 유사 패턴 확인 페이지 -->
-      <div class="similarity-main-page l-page">
+      <!-- 신호 페이지 -->
+      <div class="signal-main-page l-page">
         <div class="l-page-top">
           <div class="header type-lg">
-            <h1 class="hd-title type-lg">유사도 분석</h1>
+            <h1 class="hd-title type-lg">신호</h1>
           </div>
         </div>
 
         <!-- 페이지 내용 -->
         <div class="l-page-mid">
           <div class="l-page-content">
-            <div class="search-bar-wrap">
-              <div class="search-bar">
-                <input type="text" placeholder="종목을 입력하세요." class="inp">
-                <button type="button" class="btn">
-                  <span class="txt-hidden">검색하기</span>
-                  <img src="assets/images/icon/icon-search.svg" alt="돋보기 아이콘" class="icon icon-20">
-                </button>
+            <section class="section main-section">
+              <div class="section-ttl-wrap">
+                <h3 class="section-ttl type-lg">
+                  <span class="color-txt">10개 종목</span>에서 <br>
+                  AI 매수 신호가 발생하였습니다.
+                </h3>
               </div>
-              <div class="search-list-wrap">
-                <ul class="search-list-box">
-                  <li class="search-list">
-                    <span class="color-txt">검색어</span>입니다
-                  </li>
-                  <li class="search-list">
-                    <span class="color-txt">검색어</span>입니다
-                  </li>
-                  <li class="search-list">
-                    <span class="color-txt">검색어</span>입니다
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <section class="section section-01">
-              <div class="period-box">
-                <div class="period-item">
-                  <span class="num">1</span>
-                  <p class="txt">24.03.21 - 24.05.13</p>
+              <div class="white-card">
+                <div class="circle-wrap">
+                  <div class="circle">
+                    <span class="txt">10개</span>
+                  </div>
+                  <span class="txt">오늘 매수 종목 수</span>
                 </div>
-                <div class="period-item">
-                  <span class="num">1</span>
-                  <p class="txt">24.06.11 - 24.12.21</p>
-                </div>
-              </div>
-              <dl class="detail-list type-sm">
-                <dt class="ttl">일치율</dt>
-                <dd class="detail">
-                  <span class="red-txt">00.00%</span>
-                </dd>
-              </dl>
-              <div class="gradient-box">
-                <div class="box-content">
-                  <dt class="ttl">상승 확률</dt>
-                  <dd class="detail">
-                    <span id="odometer01" class="odometer">0</span>%
-                  </dd>
-                </div>
-                <div class="box-content">
-                  <dt class="ttl">20일 후 예상 수익</dt>
-                  <dd class="detail">
-                    <span id="odometer02" class="odometer">0</span>%
-                  </dd>
+                <div class="circle-wrap">
+                  <div class="circle">
+                    <span class="txt">20개</span>
+                  </div>
+                  <span class="txt">총 매수 종목 수</span>
                 </div>
               </div>
             </section>
             <section class="section">
-
-              <!-- 섹션 제목 -->
-              <div class="section-ttl-wrap">
-                <h3 class="section-ttl">삼성전자</h3>
-              </div>
-
-              <!-- END 섹션 제목 -->
-
-              <!-- 섹션 내용 -->
-              <div class="box-content">
-                <div class="chart-area">
-                  <img src="assets/images/sample/img-sample-chart.png" alt="차트 샘플 이미지" class="chart-img">
+              <div class="white-card">
+                <div class="section-ttl-wrap type-mbnarrow">
+                  <h3 class="section-ttl">오늘</h3>
+                  <span class="section-ttl-desc">24.02.17</span>
+                </div>
+                <div class="time-txt">
+                  <span class="ico-box">
+              <i class="ico ico-bell"></i>
+            </span>
+                  <span class="txt">15:00</span>
+                </div>
+                <div class="tbl type-03">
+                  <div class="tbl-head">
+                    <ul class="tr">
+                      <li class="th ta-left">종목명</li>
+                      <li class="th">매수가</li>
+                      <li class="th">10일 기대수익률</li>
+                      <li class="th">리스크 전략</li>
+                    </ul>
+                  </div>
+                  <div class="tbl-body">
+                    <ul class="tr">
+                      <li class="td ta-left">
+                        <div class="company-item">
+                          <figure class="logo-circle">
+                            <img src="assets/images/logo/logo-ex02.png" alt="로고" class="logo-img">
+                          </figure>
+                          <div class="item-content">
+                            <h3 class="item-ttl">신세계</h3>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="td">59,000</li>
+                      <li class="td">10%</li>
+                      <li class="td">58,000</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-
-              <!-- END 섹션 내용 -->
             </section>
           </div>
         </div>
@@ -156,32 +147,32 @@
         </span>
               <span class="txt">AI 예측</span>
             </button>
-            <button type="button" class="nav-btn " onclick="location.href='elliott-main.html';">
+            <button type="button" class="nav-btn " onclick="location.href='';">
               <span class="icon-box">
-          <img src="assets/images/icon/icon-nav-elliot-on.svg" alt="AI 예측 네비게이션 아이콘" class="icon icon-on">
-          <img src="assets/images/icon/icon-nav-elliot.svg" alt="AI 예측 네비게이션 아이콘" class="icon icon-off">
+          <i class="ico icon-on ico-like-list-on"></i>
+          <i class="ico icon-off ico-like-list"></i>
         </span>
-              <span class="txt">엘리어트파동</span>
+              <span class="txt">관심종목</span>
             </button>
-            <button type="button" class="nav-btn active" onclick="location.href='similarity-main.html';">
+            <button type="button" class="nav-btn active" onclick="location.href='signal-main.html';">
               <span class="icon-box">
-          <img src="assets/images/icon/icon-nav-similar-on.svg" alt="AI 예측 네비게이션 아이콘" class="icon icon-on">
-          <img src="assets/images/icon/icon-nav-similar.svg" alt="AI 예측 네비게이션 아이콘" class="icon icon-off">
+          <i class="ico icon-on ico-signal-on"></i>
+          <i class="ico icon-off ico-signal"></i>
         </span>
-              <span class="txt">유사도분석</span>
+              <span class="txt">신호</span>
             </button>
             <button type="button" class="nav-btn " onclick="openModal('user-modal');">
               <span class="icon-box">
           <img src="assets/images/icon/icon-nav-my-on.svg" alt="AI 예측 네비게이션 아이콘" class="icon icon-on">
           <img src="assets/images/icon/icon-nav-my.svg" alt="AI 예측 네비게이션 아이콘" class="icon icon-off">
         </span>
-              <span class="txt">마이</span>
+              <span class="txt">소통</span>
             </button>
           </div>
         </div>
       </div>
 
-      <!-- END 유사 패턴 확인 페이지 -->
+      <!-- END 신호 페이지 -->
     </div>
 
     <!-- 회원 전용 서비스 -->
@@ -206,25 +197,5 @@
       </div>
     </div>
     <script src="assets/js/ui.js"></script>
-    <script src="assets/js/pages/searchBar.js"></script>
-    <script>
-      // https://github.hubspot.com/odometer/
-      var el01 = document.querySelector('#odometer01');
-      var el02 = document.querySelector('#odometer02');
-      od = new Odometer({
-        el: el01,
-        value: 0,
-        duration: 500,
-      });
-      od = new Odometer({
-        el: el02,
-        value: 0,
-        duration: 1000,
-      });
-      setTimeout(function() {
-        el01.innerHTML = 120;
-        el02.innerHTML = 15;
-      }, 300);
-    </script>
   </body>
 </html>

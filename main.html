@@ -62,53 +62,56 @@
           <div class="l-page-content">
 
             <!-- 인사문구 -->
-            <section class="welcome-section">
-              <figure class="logo-circle">
-                <img src="assets/images/logo/logo-symbol.png" alt="로고 이미지" class="logo-img">
-              </figure>
-              <h2 class="ttl">안녕하세요, <br>Comfort & Ease입니다.</h2>
+            <section class="section bd-section main-section">
+              <div class="section-row">
+                <div class="ttl-item">
+                  <figure class="logo-circle">
+                    <img src="assets/images/logo/logo-symbol.png" alt="로고 이미지" class="logo-img">
+                  </figure>
+                  <h2 class="ttl">Comfort & Ease</h2>
+                </div>
+                <button type="button" class="btn arrow-btn arrow-blue-btn">
+                  <span class="txt">AI+전문가 무료 교육방송</span>
+                  <i class="ico ico-arrow-blue"></i>
+                </button>
+              </div>
+              <p class="main-txt">천문학적인 예측력으로 편안하게 투자하자</p>
+              <button type="button" onclick="location.href='ai-search-main.html';" class="btn main-direct-btn">
+                <i class="ico ico-search"></i>
+                <span class="txt">
+            <span>종목/증시 무료 예측하기</span>
+                <span class="indicator"></span>
+                </span>
+              </button>
+              <div class="main-chart-card">
+                <div class="box-ttl-wrap">
+                  <div class="left-wrap">
+                    <div class="box-ttl-item">
+                      <h3 class="box-ttl">
+                        <span class="txt">시장 종합 예측</span>
+                      </h3>
+                    </div>
+                    <p class="box-ttl-desc">증시의 불확실성에 대한 걱정을 내려놓고 투자에 집중하세요</p>
+                  </div>
+                </div>
+                <div class="card-content">
+                  <div class="btn-grp">
+                    <button type="button" class="btn blue-btn active">코스피</button>
+                    <button type="button" class="btn blue-btn">코스닥</button>
+                    <button type="button" class="btn blue-btn">다우존스</button>
+                    <button type="button" class="btn blue-btn">나스닥</button>
+                  </div>
+                  <div class="card-chart-area">
+                    <div class="chart-area">
+                      <img src="assets/images/img/img-main-chart.svg" alt="차트 이미지" class="chart-img">
+                    </div>
+                  </div>
+                </div>
+              </div>
             </section>
 
             <!-- END 인사문구 -->
-
-            <!-- 메인 프로모션 배너 -->
-            <section class="banner-section">
-              <div id="swiper-banner" class="swiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <img src="assets/images/banner/img-banner-01.png" alt="배너 이미지" class="banner-img">
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="assets/images/banner/img-banner-02.png" alt="배너 이미지" class="banner-img">
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="assets/images/banner/img-banner-03.png" alt="배너 이미지" class="banner-img">
-                  </div>
-                </div>
-                <div class="banner-swiper-pagination"></div>
-              </div>
-            </section>
-
-            <!-- END 메인 프로모션 배너 -->
-            <section class="direct-section">
-              <div class="white-box">
-
-                <!-- 메뉴 제목 -->
-                <div class="box-ttl-wrap">
-                  <h3 class="box-ttl">
-                    <span class="txt">종목/증시 무료 예측하기</span>
-                    <span class="indicator"></span>
-                  </h3>
-                  <div class="right-wrap">
-                    <button type="button" class="btn arrow-btn" onclick="location.href='ai-search-main.html';">
-                      <span class="txt">바로가기</span>
-                      <img src="assets/images/icon/icon-arrow-right-sm.svg" class="icon icon-16" alt="바로가기 아이콘">
-                    </button>
-                  </div>
-                </div>
-
-                <!-- END 메뉴 제목 -->
-              </div>
+            <section class="section bd-section">
               <div class="white-box ai-realtime-box">
 
                 <!-- 메뉴 제목 -->
@@ -120,10 +123,16 @@
                       </h3>
                       <button type="button" class="btn" onclick="openModal('modal-01');">
                         <span class="txt-hidden">설명 보기</span>
-                        <img src="assets/images/icon/icon-question-mark.svg" alt="물음표 아이콘" class="icon icon-20">
+                        <i class="ico ico-question-mark"></i>
                       </button>
                     </div>
                     <p class="box-ttl-desc">24.01.28 기준</p>
+                  </div>
+                  <div class="right-wrap">
+                    <button type="button" onclick="location.href='main-more-01.html';" class="btn arrow-btn arrow-blue-btn">
+                      <span class="txt">예측 결과 내역보기</span>
+                      <i class="ico ico-arrow-blue"></i>
+                    </button>
                   </div>
                 </div>
 
@@ -131,53 +140,158 @@
 
                 <!-- 메뉴 내용 -->
                 <div class="box-content">
-                  <div class="inner-content-grp">
-                    <div class="inner-content">
-                      <div class="left-figure">
-                        <div class="bar-grp">
-                          <span class="bar"></span>
-                          <span class="bar"></span>
-                          <span class="bar"></span>
-                          <span class="bar"></span>
-                        </div>
-                      </div>
-                      <dl class="detail-list">
-                        <dt class="ttl">누적 예측수</dt>
-                        <dd class="detail">
-                          <span class="blue-txt txt">
-                      <span id="odometer01" class="odometer">10,051</span>개
-                          </span>
-                        </dd>
-                      </dl>
-                    </div>
-                    <div class="inner-content">
-                      <div class="left-figure">
-                        <div class="js-circle">
-                          <div class="bar"></div>
-                        </div>
-                      </div>
-                      <dl class="detail-list">
-                        <dt class="ttl">예측률</dt>
-                        <dd class="detail">
-                          <span class="blue-txt txt">
-                      <span id="odometer02" class="odometer">6,000,000</span>%
-                          </span>
-                        </dd>
-                      </dl>
-                    </div>
+                  <div class="inner-content">
+                    <dl class="detail-list">
+                      <dt class="ttl">누적 예측수</dt>
+                      <dd class="detail">
+                        <span class="blue-txt txt">
+                    <span id="odometer01" class="odometer">10,051</span>개
+                        </span>
+                      </dd>
+                    </dl>
+                    <dl class="detail-list">
+                      <dt class="ttl">누적 예측수</dt>
+                      <dd class="detail">
+                        <span class="blue-txt txt">
+                    <span id="odometer02" class="odometer">75</span>%
+                        </span>
+                      </dd>
+                    </dl>
+                    <dl class="detail-list">
+                      <dt class="ttl">최근 10거래일 투자 수익금</dt>
+                      <dd class="detail">
+                        <span class="blue-txt txt">
+                    <span id="odometer03" class="odometer">6,000,000</span>개
+                        </span>
+                        <span class="txt-desc">투자금 5천만원 기준</span>
+                      </dd>
+                    </dl>
                   </div>
-                  <dl class="detail-list">
-                    <dt class="ttl">최근 10거래일 투자 수익금</dt>
-                    <dd class="detail">
-                      <b class="blue-txt txt">
-                        <span id="odometer03" class="odometer">6,000,000</span>만원</b>
-                      <span class="txt-desc">투자금 5천만원 기준</span>
-                    </dd>
-                  </dl>
                 </div>
 
                 <!-- END 메뉴 내용 -->
               </div>
+            </section>
+            <section class="section bd-section">
+              <div class="white-box">
+
+                <!-- 메뉴 제목 -->
+                <div class="box-ttl-wrap">
+                  <div class="left-wrap">
+                    <div class="box-ttl-item">
+                      <h3 class="box-ttl">
+                        <span class="txt">오늘 상승 예측 종목 현황</span>
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="right-wrap type-mt0">
+                    <button type="button" class="btn arrow-btn bd-arrow-btn" onclick="openModal('modal-01');">
+                      <span class="txt">
+                  AI 실시간 매매 신호받기
+                  <span class="indicator"></span>
+                      </span>
+                      <img src="assets/images/icon/icon-arrow-right-sm.svg" class="icon icon-16" alt="바로가기 아이콘">
+                    </button>
+                  </div>
+                </div>
+
+                <!-- END 메뉴 제목 -->
+
+                <!-- 메뉴 내용 -->
+                <div class="box-content">
+                  <div class="company-list">
+                    <span class="list-num">1</span>
+                    <div class="company-item">
+                      <figure class="logo-circle">
+                        <img src="assets/images/logo/logo-ex01.png" alt="로고" class="logo-img">
+                      </figure>
+                      <div class="item-content">
+                        <h3 class="item-ttl">이마트</h3>
+                        <p class="item-desc">
+                          <span class="txt">예상수익률</span>
+
+                          <!-- TODO: 마이너스일 경우에 blue-txt 로 달아주세요 -->
+                          <span class="txt red-txt">+5.6%</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="company-list">
+                    <span class="list-num">2</span>
+                    <div class="company-item">
+                      <figure class="logo-circle">
+                        <img src="assets/images/logo/logo-ex02.png" alt="로고" class="logo-img">
+                      </figure>
+                      <div class="item-content">
+                        <h3 class="item-ttl">신세계</h3>
+                        <p class="item-desc">
+                          <span class="txt">예상수익률</span>
+
+                          <!-- TODO: 마이너스일 경우에 blue-txt 로 달아주세요 -->
+                          <span class="txt red-txt">+5.6%</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- END 메뉴 내용 -->
+              </div>
+              <div class="white-box">
+
+                <!-- 메뉴 제목 -->
+                <div class="box-ttl-wrap">
+                  <div class="box-ttl-item">
+                    <h3 class="box-ttl">
+                      <span class="txt">이번주 상승 예측 종목 현황</span>
+                    </h3>
+                  </div>
+                </div>
+
+                <!-- END 메뉴 제목 -->
+
+                <!-- 메뉴 내용 -->
+                <div class="box-content">
+                  <div class="company-list">
+                    <span class="list-num">1</span>
+                    <div class="company-item">
+                      <figure class="logo-circle">
+                        <img src="assets/images/logo/logo-ex01.png" alt="로고" class="logo-img">
+                      </figure>
+                      <div class="item-content">
+                        <h3 class="item-ttl">이마트</h3>
+                        <p class="item-desc">
+                          <span class="txt">예상수익률</span>
+
+                          <!-- TODO: 마이너스일 경우에 blue-txt 로 달아주세요 -->
+                          <span class="txt red-txt">+5.6%</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="company-list">
+                    <span class="list-num">2</span>
+                    <div class="company-item">
+                      <figure class="logo-circle">
+                        <img src="assets/images/logo/logo-ex02.png" alt="로고" class="logo-img">
+                      </figure>
+                      <div class="item-content">
+                        <h3 class="item-ttl">신세계</h3>
+                        <p class="item-desc">
+                          <span class="txt">예상수익률</span>
+
+                          <!-- TODO: 마이너스일 경우에 blue-txt 로 달아주세요 -->
+                          <span class="txt red-txt">+5.6%</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- END 메뉴 내용 -->
+              </div>
+            </section>
+            <section class="section bd-section">
               <div class="white-box">
 
                 <!-- 메뉴 제목 -->
@@ -188,10 +302,11 @@
                     </h3>
                     <p class="box-ttl-desc">현재 문의가 많은 종목</p>
                   </div>
-                  <div class="right-wrap">
-                    <button type="button" class="btn arrow-btn" onclick="location.href='ai-recommend-chart.html';">
-                      <span class="txt">AI 인기종목 추천받기</span>
-                      <span class="indicator"></span>
+                  <div class="right-wrap type-mt0">
+                    <button type="button" class="btn bd-arrow-btn arrow-btn" onclick="location.href='ai-recommend-chart.html';" onclick="location.href='main-more-02.html';">
+                      <span class="txt">AI 인기종목 추천받기
+                  <span class="indicator"></span>
+                      </span>
                       <img src="assets/images/icon/icon-arrow-right-sm.svg" class="icon icon-16" alt="바로가기 아이콘">
                     </button>
                   </div>
@@ -233,25 +348,22 @@
                       </button>
                     </li>
                   </ul>
+                  <button type="button" class="btn gray-bd-btn btn-w100" onclick="location.href='main-more-02.html';">인기종목 더보기</button>
                 </div>
 
                 <!-- END 메뉴 내용 -->
               </div>
-              <div class="white-box ai-solution-box">
+            </section>
+            <section class="section bd-section">
+              <div class="white-box">
 
                 <!-- 메뉴 제목 -->
                 <div class="box-ttl-wrap">
-                  <div class="box-ttl-item">
+                  <div class="left-wrap">
                     <h3 class="box-ttl">
-                      <span class="txt">AI 예측 솔루션</span>
+                      <span class="txt">실시간 TOP 10 뉴스 종목 예측현황</span>
                     </h3>
-                    <button type="button" class="btn" onclick="openModal('modal-02');">
-                      <span class="txt-hidden">설명 보기</span>
-                      <img src="assets/images/icon/icon-question-mark.svg" alt="물음표 아이콘" class="icon icon-20">
-                    </button>
-                  </div>
-                  <div class="right-wrap type-narrow">
-                    <span class="badge type-blue">최고 예측률</span>
+                    <p class="box-ttl-desc">현재 이슈 종목</p>
                   </div>
                 </div>
 
@@ -259,77 +371,57 @@
 
                 <!-- 메뉴 내용 -->
                 <div class="box-content">
-                  <div class="inner-content-grp">
-                    <div class="inner-content">
-                      <div class="solution-box type-blue" onclick="location.href='ai-search-main.html';">
-                        <img src="assets/images/icon/icon-pie.svg" alt="종목/증시 예측 아이콘" class="icon icon-36">
-                        <h3 class="ttl">종목/증시 예측</h3>
-                        <button type="button" class="btn">
-                          <span class="txt-hidden">종목/증시 예측 바로 가기</span>
-                          <img src="assets/images/icon/icon-arrow-right.svg" alt="바로가기 아이콘" class="icon icon-16">
+                  <ul class="list-item-grp">
+                    <li class="list-item-row">
+                      <div class="list-item">
+                        <span class="badge type-hold">보유중</span>
+                        <h3 class="ttl">이수페타시스</h3>
+                        <button type="button" class="btn" onclick="location.href='detail-main.html';">
+
+                          <!-- TODO: 예측률 따라 양이면 type-red, 음이면 type-blue 클래스를 추가합니다 -->
+                          <span class="percent-txt type-blue">- 00.00%</span>
+                          <img src="assets/images/icon/icon-arrow-right-sm.svg" class="icon icon-16" alt="바로가기 아이콘">
                         </button>
                       </div>
-                    </div>
-                    <div class="inner-content">
-                      <div class="solution-box type-mint" onclick="location.href='ai-recommend-chart.html';">
-                        <img src="assets/images/icon/icon-ai.svg" alt="종목/증시 예측 아이콘" class="icon icon-36">
-                        <h3 class="ttl">AI 종목 추천</h3>
-                        <button type="button" class="btn">
-                          <span class="txt-hidden">AI 종목 추천 바로 가기</span>
-                          <img src="assets/images/icon/icon-arrow-right.svg" alt="바로가기 아이콘" class="icon icon-16">
+                      <p class="news-txt">삼성전자가 7년 동안 이어진 사법 리스크에 발이 묶인 동안, 글로벌 주요 반도체 경쟁사들은 발 빠르게 움직이며 세계 시장에서 영향력을 확대하고 있다.
+                        대만 TSMC는 반도체 파운드리(위탁 생산) 분야 선두를 확고히 다졌고, 미국 인텔과 일본 라피더스 등 후발 주자는 국가적 지원을 받아 삼성전자를 거세게 추격하고 있다. 2030년까지
+                        메모리 반도체와 파운드리를 포함한 시스템 반도체 모두에서 글로벌 1위를 목표로 하고 있는 삼성전자가 직면한 경쟁이 한층 치열해졌다는 평가가 나온다.</p>
+                    </li>
+                    <li class="list-item-row">
+                      <div class="list-item">
+                        <span class="badge">관망중</span>
+                        <h3 class="ttl">센서뷰</h3>
+                        <button type="button" class="btn" onclick="location.href='detail-main.html';">
+
+                          <!-- TODO: 예측률 따라 양이면 type-red, 음이면 type-blue 클래스를 추가합니다 -->
+                          <span class="percent-txt type-red">+ 00.00%</span>
+                          <img src="assets/images/icon/icon-arrow-right-sm.svg" class="icon icon-16" alt="바로가기 아이콘">
                         </button>
                       </div>
-                    </div>
-                  </div>
+                      <p class="news-txt">삼성전자가 7년 동안 이어진 사법 리스크에 발이 묶인 동안, 글로벌 주요 반도체 경쟁사들은 발 빠르게 움직이며 세계 시장에서 영향력을 확대하고 있다.
+                        대만 TSMC는 반도체 파운드리(위탁 생산) 분야 선두를 확고히 다졌고, 미국 인텔과 일본 라피더스 등 후발 주자는 국가적 지원을 받아 삼성전자를 거세게 추격하고 있다. 2030년까지
+                        메모리 반도체와 파운드리를 포함한 시스템 반도체 모두에서 글로벌 1위를 목표로 하고 있는 삼성전자가 직면한 경쟁이 한층 치열해졌다는 평가가 나온다.</p>
+                    </li>
+                    <li class="list-item-row">
+                      <div class="list-item">
+                        <span class="badge type-hold">보유중</span>
+                        <h3 class="ttl">어보브반도체</h3>
+                        <button type="button" class="btn" onclick="location.href='detail-main.html';">
+
+                          <!-- TODO: 예측률 따라 양이면 type-red, 음이면 type-blue 클래스를 추가합니다 -->
+                          <span class="percent-txt type-red">+ 00.00%</span>
+                          <img src="assets/images/icon/icon-arrow-right-sm.svg" class="icon icon-16" alt="바로가기 아이콘">
+                        </button>
+                      </div>
+                      <p class="news-txt">삼성전자가 7년 동안 이어진 사법 리스크에 발이 묶인 동안, 글로벌 주요 반도체 경쟁사들은 발 빠르게 움직이며 세계 시장에서 영향력을 확대하고 있다.
+                        대만 TSMC는 반도체 파운드리(위탁 생산) 분야 선두를 확고히 다졌고, 미국 인텔과 일본 라피더스 등 후발 주자는 국가적 지원을 받아 삼성전자를 거세게 추격하고 있다. 2030년까지
+                        메모리 반도체와 파운드리를 포함한 시스템 반도체 모두에서 글로벌 1위를 목표로 하고 있는 삼성전자가 직면한 경쟁이 한층 치열해졌다는 평가가 나온다.</p>
+                    </li>
+                  </ul>
+                  <button type="button" class="btn gray-bd-btn btn-w100" onclick="location.href='main-more-03.html';">뉴스종목 더보기</button>
                 </div>
 
                 <!-- END 메뉴 내용 -->
-              </div>
-              <div class="white-box">
-
-                <!-- 메뉴 제목 -->
-                <div class="box-ttl-wrap">
-                  <div class="box-ttl-item">
-                    <h3 class="box-ttl">
-                      <span class="txt">엘리어트 파동 플랫폼</span>
-                    </h3>
-                    <button type="button" class="btn" onclick="openModal('modal-03');">
-                      <span class="txt-hidden">설명 보기</span>
-                      <img src="assets/images/icon/icon-question-mark.svg" alt="물음표 아이콘" class="icon icon-20">
-                    </button>
-                  </div>
-                  <div class="right-wrap type-narrow">
-                    <button type="button" class="btn arrow-btn" onclick="location.href='elliott-main.html';">
-                      <span class="badge type-blue">국내 유일</span>
-                      <img src="assets/images/icon/icon-arrow-right-sm.svg" class="icon icon-16" alt="바로가기 아이콘">
-                    </button>
-                  </div>
-                </div>
-
-                <!-- END 메뉴 제목 -->
-              </div>
-              <div class="white-box">
-
-                <!-- 메뉴 제목 -->
-                <div class="box-ttl-wrap">
-                  <div class="box-ttl-item">
-                    <h3 class="box-ttl">
-                      <span class="txt">유사도 분석</span>
-                    </h3>
-                    <button type="button" class="btn" onclick="openModal('modal-04');">
-                      <span class="txt-hidden">설명 보기</span>
-                      <img src="assets/images/icon/icon-question-mark.svg" alt="물음표 아이콘" class="icon icon-20">
-                    </button>
-                  </div>
-                  <div class="right-wrap type-narrow">
-                    <button type="button" class="btn arrow-btn" onclick="location.href='similarity-main.html';">
-                      <span class="badge type-blue">업계 최초 무료</span>
-                      <img src="assets/images/icon/icon-arrow-right-sm.svg" class="icon icon-16" alt="바로가기 아이콘">
-                    </button>
-                  </div>
-                </div>
-
-                <!-- END 메뉴 제목 -->
               </div>
             </section>
           </div>
@@ -352,26 +444,26 @@
         </span>
               <span class="txt">AI 예측</span>
             </button>
-            <button type="button" class="nav-btn " onclick="location.href='elliott-main.html';">
+            <button type="button" class="nav-btn " onclick="location.href='';">
               <span class="icon-box">
-          <img src="assets/images/icon/icon-nav-elliot-on.svg" alt="AI 예측 네비게이션 아이콘" class="icon icon-on">
-          <img src="assets/images/icon/icon-nav-elliot.svg" alt="AI 예측 네비게이션 아이콘" class="icon icon-off">
+          <i class="ico icon-on ico-like-list-on"></i>
+          <i class="ico icon-off ico-like-list"></i>
         </span>
-              <span class="txt">엘리어트파동</span>
+              <span class="txt">관심종목</span>
             </button>
-            <button type="button" class="nav-btn " onclick="location.href='similarity-main.html';">
+            <button type="button" class="nav-btn " onclick="location.href='signal-main.html';">
               <span class="icon-box">
-          <img src="assets/images/icon/icon-nav-similar-on.svg" alt="AI 예측 네비게이션 아이콘" class="icon icon-on">
-          <img src="assets/images/icon/icon-nav-similar.svg" alt="AI 예측 네비게이션 아이콘" class="icon icon-off">
+          <i class="ico icon-on ico-signal-on"></i>
+          <i class="ico icon-off ico-signal"></i>
         </span>
-              <span class="txt">유사도분석</span>
+              <span class="txt">신호</span>
             </button>
             <button type="button" class="nav-btn " onclick="openModal('user-modal');">
               <span class="icon-box">
           <img src="assets/images/icon/icon-nav-my-on.svg" alt="AI 예측 네비게이션 아이콘" class="icon icon-on">
           <img src="assets/images/icon/icon-nav-my.svg" alt="AI 예측 네비게이션 아이콘" class="icon icon-off">
         </span>
-              <span class="txt">마이</span>
+              <span class="txt">소통</span>
             </button>
           </div>
         </div>
@@ -497,31 +589,6 @@
         emptyFill: "#EAEEFC"
       }
       $('.js-circle .bar').circleProgress(options).on('circle-animation-progress', function(event, progress, stepValue) {});
-      // 수치 영역에 애니메이션 적용
-      // https://github.hubspot.com/odometer/
-      var el01 = document.querySelector('#odometer01');
-      var el02 = document.querySelector('#odometer02');
-      var el03 = document.querySelector('#odometer03');
-      od = new Odometer({
-        el: el01,
-        value: 0,
-        duration: 500,
-      });
-      od = new Odometer({
-        el: el02,
-        value: 0,
-        duration: 1000,
-      });
-      od = new Odometer({
-        el: el03,
-        value: 0,
-        duration: 1000,
-      });
-      setTimeout(function() {
-        el01.innerHTML = 10051;
-        el02.innerHTML = 75;
-        el03.innerHTML = 6000000;
-      }, 300);
     </script>
   </body>
 </html>
