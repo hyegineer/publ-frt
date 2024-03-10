@@ -159,7 +159,7 @@
               </div>
             </div>
             <div class="box-btn-wrap type-space-around">
-              <button type="button" class="btn circle-btn">
+              <button type="button" id="charts-next-btn" class="btn circle-btn">
                 <span class="circle">
             <img src="assets/images/icon/icon-x.svg" alt="닫기 아이콘" class="icon icon-20">
           </span>
@@ -221,6 +221,7 @@
       var chartsSwiper = new Swiper("#charts-swiper", {
         grabCursor: true,
         effect: "creative",
+        loop: true,
         creativeEffect: {
           prev: {
             shadow: true,
@@ -231,6 +232,9 @@
           },
         },
       });
+      $('#charts-next-btn').on('click', function() {
+        chartsSwiper.slideNext();
+      })
     </script>
   </body>
 </html>
