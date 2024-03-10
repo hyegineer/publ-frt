@@ -436,6 +436,10 @@ img {
   color: #2F54EB;
   border-color: #2F54EB;
 }
+.tabs .tab.type-red.active {
+  color: #FF3434 !important;
+  border-color: #FF3434 !important;
+}
 
 .tabs.type-01 {
   gap: 0.8rem;
@@ -525,10 +529,10 @@ img {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   word-wrap: break-word;
-  line-height: 18px;
-  height: 54px;
+  line-height: 22px;
+  height: 66px;
   /* line-height 가 1.2em 이고 3라인을 자르기 때문에 height는 1.2em * 3 = 3.6em */
-  font-size: 12px;
+  font-size: 14px;
   color: #414141;
   font-weight: 500;
   letter-spacing: -0.12px;
@@ -569,6 +573,7 @@ body {
   flex: 1;
   overflow: auto;
   position: relative;
+  scroll-behavior: smooth;
 }
 .l-page .l-page-mid::-webkit-scrollbar {
   display: none;
@@ -861,7 +866,7 @@ body {
   padding: 0 1.6rem;
   height: 4.8rem;
   color: white;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 500;
   letter-spacing: -0.32px;
   background-color: #5B88FF;
@@ -872,8 +877,8 @@ body {
   gap: 0.3rem;
 }
 .arrow-btn .txt {
-  font-size: 11px;
-  font-weight: 500;
+  font-size: 12px;
+  font-weight: 600;
   letter-spacing: -0.24px;
   color: #595959;
 }
@@ -883,13 +888,25 @@ body {
 
 .bd-arrow-btn {
   border: 1px solid #DEE4EF;
-  height: 24px;
+  height: 30px;
   padding: 0 0.8rem;
   padding-right: 0.4rem;
   border-radius: 6px;
 }
 .bd-arrow-btn .txt {
   position: relative;
+}
+
+.bd-arrow-blue-btn {
+  border: 1px solid #aec7f5;
+  height: 30px;
+  padding: 0 0.8rem;
+  border-radius: 6px;
+  gap: 5px;
+}
+.bd-arrow-blue-btn .txt {
+  position: relative;
+  color: #215DFF;
 }
 
 .arrow-blue-btn .txt {
@@ -930,7 +947,7 @@ body {
   border-radius: 6px;
   height: 4.8rem;
   letter-spacing: -0.32px;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 600;
   color: #7C889D;
   padding: 0 10px;

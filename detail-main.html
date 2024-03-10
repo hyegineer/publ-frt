@@ -93,7 +93,7 @@
               </div>
               <div class="section-content">
                 <div class="btn-grp">
-                  <button type="button" class="btn gray-bd-btn">종목 예측 내역 보기</button>
+                  <button type="button" class="btn gray-bd-btn">과거 예측 내역 보기</button>
                   <button type="button" class="btn gray-bd-btn">기업개요 읽기</button>
                 </div>
                 <div class="main-info-card">
@@ -159,28 +159,28 @@
               <!-- 섹션 내용 -->
               <div class="section-content">
                 <div class="box-grp">
-                  <div class="point-box">
+                  <a href="#section01" class="point-box">
                     <span class="num">1</span>
                     <p class="txt">AI 차트 예측 솔루션 예측률 95%</p>
-                  </div>
-                  <div class="point-box">
+                  </a>
+                  <a href="#section02" class="point-box">
                     <span class="num">2</span>
                     <p class="txt">정부 저 PBR 제고 정책</p>
-                  </div>
-                  <div class="point-box">
+                  </a>
+                  <a href="#section03" class="point-box">
                     <span class="num">3</span>
                     <p class="txt">24년 1분기 실적 어닝 서프라이즈</p>
-                  </div>
-                  <div class="point-box">
+                  </a>
+                  <a href="#section04" class="point-box">
                     <span class="num">4</span>
                     <p class="txt">외국인 매수세 대폭 확대</p>
-                  </div>
+                  </a>
                 </div>
               </div>
 
               <!-- END 섹션 내용 -->
             </section>
-            <section class="bd-section">
+            <section id="section01" class="bd-section">
 
               <!-- 섹션 제목 -->
               <div class="section-ttl-wrap type-center ">
@@ -195,75 +195,149 @@
 
               <!-- 섹션 내용 -->
               <div class="section-content">
-                <div class="result-container">
-                  <div class="chart-area">
-                    <img src="assets/images/sample/img-sample-chart.png" alt="차트 임시 이미지" class="chart-img">
-                  </div>
-                  <div class="info-white-box">
-                    <div class="box-content">
-                      <div class="js-circle">
-                        <div class="bar"></div>
-                        <div class="box">
-                          <span class="label">상승확률</span>
-                          <b class="percent red-txt">75%</b>
+                <div id="tabs01-02" class="tabs type-02">
+                  <button type="button" data-tab="tab01-0201" class="tab active">유사도 분석</button>
+                  <button type="button" data-tab="tab01-0202" class="tab">엘리어트 파동 분석</button>
+                </div>
+                <div id="tabs01-02-contents" class="tab-content-container">
+                  <div id="tab01-0201" class="tab-content active">
+                    <div class="result-container">
+                      <div class="chart-area">
+                        <img src="assets/images/sample/img-sample-chart.png" alt="차트 임시 이미지" class="chart-img">
+                      </div>
+                      <div class="info-white-box">
+                        <div class="box-content">
+                          <div class="js-circle">
+                            <div class="bar"></div>
+                            <div class="box">
+                              <span class="label">상승확률</span>
+                              <b class="percent red-txt">75%</b>
+                            </div>
+                          </div>
+                          <ul class="gage-list-grp">
+                            <li class="gage-list">
+                              <h3 class="ttl">종목</h3>
+                              <div class="gage-boxes">
+                                <div class="gage-box"></div>
+                                <div class="gage-box"></div>
+                                <div class="gage-box"></div>
+                                <div class="gage-box"></div>
+                                <div class="gage-box active"></div>
+                              </div>
+                            </li>
+                            <li class="gage-list">
+                              <h3 class="ttl">환율</h3>
+                              <div class="gage-boxes">
+                                <div class="gage-box"></div>
+                                <div class="gage-box"></div>
+                                <div class="gage-box"></div>
+                                <div class="gage-box active"></div>
+                                <div class="gage-box "></div>
+                              </div>
+                            </li>
+                            <li class="gage-list">
+                              <h3 class="ttl">증시</h3>
+                              <div class="gage-boxes">
+                                <div class="gage-box"></div>
+                                <div class="gage-box"></div>
+                                <div class="gage-box active"></div>
+                                <div class="gage-box"></div>
+                                <div class="gage-box"></div>
+                              </div>
+                            </li>
+                            <li class="gage-list">
+                              <h3 class="ttl">업종</h3>
+                              <div class="gage-boxes">
+                                <div class="gage-box"></div>
+                                <div class="gage-box active"></div>
+                                <div class="gage-box"></div>
+                                <div class="gage-box"></div>
+                                <div class="gage-box"></div>
+                              </div>
+                            </li>
+                          </ul>
                         </div>
                       </div>
-                      <ul class="gage-list-grp">
-                        <li class="gage-list">
-                          <h3 class="ttl">종목</h3>
-                          <div class="gage-boxes">
-                            <div class="gage-box"></div>
-                            <div class="gage-box"></div>
-                            <div class="gage-box"></div>
-                            <div class="gage-box"></div>
-                            <div class="gage-box active"></div>
-                          </div>
-                        </li>
-                        <li class="gage-list">
-                          <h3 class="ttl">환율</h3>
-                          <div class="gage-boxes">
-                            <div class="gage-box"></div>
-                            <div class="gage-box"></div>
-                            <div class="gage-box"></div>
-                            <div class="gage-box active"></div>
-                            <div class="gage-box "></div>
-                          </div>
-                        </li>
-                        <li class="gage-list">
-                          <h3 class="ttl">증시</h3>
-                          <div class="gage-boxes">
-                            <div class="gage-box"></div>
-                            <div class="gage-box"></div>
-                            <div class="gage-box active"></div>
-                            <div class="gage-box"></div>
-                            <div class="gage-box"></div>
-                          </div>
-                        </li>
-                        <li class="gage-list">
-                          <h3 class="ttl">업종</h3>
-                          <div class="gage-boxes">
-                            <div class="gage-box"></div>
-                            <div class="gage-box active"></div>
-                            <div class="gage-box"></div>
-                            <div class="gage-box"></div>
-                            <div class="gage-box"></div>
-                          </div>
-                        </li>
-                      </ul>
+                      <div class="btn-wrap">
+                        <button type="button" class="btn btn-w100 gray-bd-btn" onclick="location.href='detail-similarity-main.html';">
+                          <span class="txt">유사패턴 확인</span>
+                          <i class="ico ico-arrow-right-sm-gray"></i>
+                        </button>
+                      </div>
                     </div>
                   </div>
-                  <div class="btn-wrap">
-                    <button type="button" class="btn btn-w100 gray-bd-btn" onclick="location.href='detail-similarity-main.html';">
-                      <span class="txt">유사패턴 확인</span>
-                      <i class="ico ico-arrow-right-sm-gray"></i>
-                    </button>
+                  <div id="tab01-0202" class="tab-content">
+                    <div class="result-container">
+                      <div class="chart-area">
+                        <img src="assets/images/sample/img-sample-chart.png" alt="차트 임시 이미지" class="chart-img">
+                      </div>
+                      <div class="info-white-box">
+                        <div class="box-content">
+                          <div class="js-circle">
+                            <div class="bar"></div>
+                            <div class="box">
+                              <span class="label">상승확률</span>
+                              <b class="percent red-txt">75%</b>
+                            </div>
+                          </div>
+                          <ul class="gage-list-grp">
+                            <li class="gage-list">
+                              <h3 class="ttl">종목</h3>
+                              <div class="gage-boxes">
+                                <div class="gage-box"></div>
+                                <div class="gage-box"></div>
+                                <div class="gage-box"></div>
+                                <div class="gage-box"></div>
+                                <div class="gage-box active"></div>
+                              </div>
+                            </li>
+                            <li class="gage-list">
+                              <h3 class="ttl">환율</h3>
+                              <div class="gage-boxes">
+                                <div class="gage-box"></div>
+                                <div class="gage-box"></div>
+                                <div class="gage-box"></div>
+                                <div class="gage-box active"></div>
+                                <div class="gage-box "></div>
+                              </div>
+                            </li>
+                            <li class="gage-list">
+                              <h3 class="ttl">증시</h3>
+                              <div class="gage-boxes">
+                                <div class="gage-box"></div>
+                                <div class="gage-box"></div>
+                                <div class="gage-box active"></div>
+                                <div class="gage-box"></div>
+                                <div class="gage-box"></div>
+                              </div>
+                            </li>
+                            <li class="gage-list">
+                              <h3 class="ttl">업종</h3>
+                              <div class="gage-boxes">
+                                <div class="gage-box"></div>
+                                <div class="gage-box active"></div>
+                                <div class="gage-box"></div>
+                                <div class="gage-box"></div>
+                                <div class="gage-box"></div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="btn-wrap">
+                        <button type="button" class="btn btn-w100 gray-bd-btn" onclick="location.href='detail-elliott-main.html';">
+                          <span class="txt">파동 카운팅 확인</span>
+                          <i class="ico ico-arrow-right-sm-gray"></i>
+                        </button>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
 
               <!-- END 섹션 내용 -->
             </section>
-            <section class="bd-section">
+            <section id="section02" class="bd-section">
 
               <!-- 섹션 제목 -->
               <div class="section-ttl-wrap type-center type-mbnarrow">
@@ -293,7 +367,7 @@
 
               <!-- END 섹션 내용 -->
             </section>
-            <section class="bd-section">
+            <section id="section03" class="bd-section">
 
               <!-- 섹션 제목 -->
               <div class="section-ttl-wrap type-center type-bd">
@@ -688,7 +762,7 @@
 
               <!-- END 섹션 내용 -->
             </section>
-            <section class="bd-section">
+            <section id="section04" class="bd-section">
 
               <!-- 섹션 제목 -->
               <div class="section-ttl-wrap type-center type-mbnarrow">
@@ -707,8 +781,8 @@
 
                   <!-- 누적 매매 -->
                   <div id="tab03-01" class="tab-content active">
-                    <div id="tabs0301" class="tabs type-01 type-center type-red">
-                      <button data-tab="tab0301-01" type="button" class="tab active">외국인</button>
+                    <div id="tabs0301" class="tabs type-01 type-center">
+                      <button data-tab="tab0301-01" type="button" class="tab type-red active">외국인</button>
                       <button data-tab="tab0301-02" type="button" class="tab">기관</button>
                       <button data-tab="tab0301-03" type="button" class="tab">개인</button>
                     </div>
