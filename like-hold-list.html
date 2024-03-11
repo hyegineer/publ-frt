@@ -57,71 +57,65 @@
   <body ontouchstart>
     <div id="app">
 
-      <!-- 관심종목 목록 편집 페이지 -->
-      <div class="like-edit-page l-page">
+      <!-- 보유현황 페이지 -->
+      <div class="like-hold-list-page l-page">
         <div class="l-page-top">
           <div class="header">
-            <button type="button" class="btn back-btn" onclick="location.href='detail-main.html';">
+            <button type="button" class="btn back-btn" onclick="location.href='like-list.html';">
               <span class="txt-hidden">뒤로 가기</span>
               <i class="ico ico-arrow-back"></i>
             </button>
-            <h1 class="hd-title">관심종목 편집</h1>
+            <h1 class="hd-title">보유현황</h1>
           </div>
         </div>
 
         <!-- 페이지 내용 -->
         <div class="l-page-mid">
           <div class="l-page-content">
-            <div>
-            </div>
+            <section class="section">
+              <div class="tbl type-04">
+                <div class="tbl-head">
+                  <ul class="tr">
+                    <li class="th ta-left">종목명</li>
+                    <li class="th">현재가</li>
+                    <li class="th">보유현황</li>
+                  </ul>
+                </div>
+                <div class="tbl-body">
+                  <ul class="tr">
+                    <li class="td ta-left">
+                      <b class="name">KODEX 반도체</b>
+                    </li>
+                    <li class="td">
+                      <span class="blue-txt">-2.5%</span>
+                    </li>
+                    <li class="td">
+                      <span class="badge type-hold">보유중</span>
+                    </li>
+                  </ul>
+                  <ul class="tr">
+                    <li class="td ta-left">
+                      <b class="name">KODEX 반도체</b>
+                    </li>
+                    <li class="td">
+                      <span class="red-txt">2.5%</span>
+                    </li>
+                    <li class="td">
+                      <span class="badge">관망중</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </section>
           </div>
         </div>
 
         <!-- END 페이지 내용 -->
         <div class="l-page-bottom">
-          <div class="nav-btns">
-            <button type="button" class="nav-btn " onclick="location.href='main.html';">
-              <span class="icon-box">
-          <img src="assets/images/icon/icon-nav-home-on.svg" alt="홈 네비게이션 아이콘" class="icon icon-on">
-          <img src="assets/images/icon/icon-nav-home.svg" alt="홈 네비게이션 아이콘" class="icon icon-off">
-        </span>
-              <span class="txt">홈</span>
-            </button>
-            <button type="button" class="nav-btn " onclick="location.href='ai-main.html';">
-              <span class="icon-box">
-          <img src="assets/images/icon/icon-nav-ai-on.svg" alt="AI 예측 네비게이션 아이콘" class="icon icon-on">
-          <img src="assets/images/icon/icon-nav-ai.svg" alt="AI 예측 네비게이션 아이콘" class="icon icon-off">
-        </span>
-              <span class="txt">AI 예측</span>
-            </button>
-            <button type="button" class="nav-btn active" onclick="location.href='';">
-              <span class="icon-box">
-          <i class="ico icon-on ico-like-list-on"></i>
-          <i class="ico icon-off ico-like-list"></i>
-        </span>
-              <span class="txt">관심종목</span>
-            </button>
-            <button type="button" class="nav-btn " onclick="location.href='signal-main.html';">
-              <span class="icon-box">
-          <i class="ico icon-on ico-signal-on"></i>
-          <i class="ico icon-off ico-signal"></i>
-        </span>
-              <span class="txt">신호</span>
-            </button>
-            <button type="button" class="nav-btn " onclick="openModal('user-modal');">
-              <span class="icon-box">
-          <img src="assets/images/icon/icon-nav-my-on.svg" alt="AI 예측 네비게이션 아이콘" class="icon icon-on">
-          <img src="assets/images/icon/icon-nav-my.svg" alt="AI 예측 네비게이션 아이콘" class="icon icon-off">
-        </span>
-              <span class="txt">소통</span>
-            </button>
-          </div>
         </div>
       </div>
 
-      <!-- END 관심종목 목록 편집 페이지 -->
-
-      <!-- FIXME: 모달) 관심그룹 추가 모달 -->
+      <!-- END 보유현황 페이지 -->
     </div>
 
     <!-- 회원 전용 서비스 -->

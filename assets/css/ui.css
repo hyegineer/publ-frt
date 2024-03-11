@@ -543,6 +543,21 @@ html {
   font-size: 10px;
 }
 
+@media all and (max-width: 365px) {
+  html {
+    font-size: 9.5px;
+  }
+}
+@media all and (max-width: 350px) {
+  html {
+    font-size: 8px;
+  }
+}
+@media all and (max-width: 300px) {
+  html {
+    font-size: 7px;
+  }
+}
 html,
 body {
   width: 100%;
@@ -844,6 +859,38 @@ body {
   flex: 1;
 }
 
+.bottom-sheet-modal {
+  align-self: flex-end;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 450px;
+  overflow: hidden;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: white;
+}
+.bottom-sheet-modal .modal-ttl-wrap {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+.bottom-sheet-modal .modal-ttl {
+  width: 100%;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #262626;
+  letter-spacing: -0.36px;
+  line-height: 1.44;
+}
+.bottom-sheet-modal .modal-content-wrap {
+  padding-bottom: 2rem;
+  max-height: 200px;
+  overflow: auto;
+}
+
 .btn {
   padding: 0;
   border: 0;
@@ -871,6 +918,19 @@ body {
   letter-spacing: -0.32px;
   background-color: #5B88FF;
   border-radius: 8px;
+}
+
+.lightblue-solid-btn {
+  border-radius: 6px;
+  padding: 0 1.6rem;
+  height: 4.8rem;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 500;
+  letter-spacing: -0.32px;
+  color: #5B88FF;
+  border-radius: 8px;
+  background-color: #E5EAFD;
 }
 
 .arrow-btn {

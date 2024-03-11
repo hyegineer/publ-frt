@@ -93,7 +93,7 @@
               </div>
               <div class="section-content">
                 <div class="btn-grp">
-                  <button type="button" class="btn gray-bd-btn">과거 예측 내역 보기</button>
+                  <button type="button" onclick="location.href='main-more-01-chart.html';" class="btn gray-bd-btn">과거 예측 내역 보기</button>
                   <button type="button" class="btn gray-bd-btn">기업개요 읽기</button>
                 </div>
                 <div class="main-info-card">
@@ -393,7 +393,7 @@
                       <!-- 분기성적 -->
                       <div id="tab01" class="tab-content active">
                         <div class="inner-chart-area">
-                          분기 성적
+                          <img src="assets/images/sample/img-sample-result-chart-01.png" alt="">
                         </div>
                         <div class="chart-swiper-container">
                           <div class="swiper swiper-01">
@@ -528,7 +528,7 @@
                       <!-- 연간성적 -->
                       <div id="tab02" class="tab-content">
                         <div class="inner-chart-area">
-                          연간 성적
+                          <img src="assets/images/sample/img-sample-result-chart-01.png" alt="">
                         </div>
                         <div class="chart-swiper-container">
                           <div class="swiper swiper-02">
@@ -679,7 +679,9 @@
 
                       <!-- PER -->
                       <div id="tab02-01" class="tab-content active">
-                        <div class="inner-chart-area">PER내용</div>
+                        <div class="inner-chart-area">
+                          <img src="assets/images/sample/img-sample-result-chart-02.png" alt="">
+                        </div>
                         <div class="chart-swiper-container">
                           <div class="swiper">
                             <div class="swiper-wrapper">
@@ -723,35 +725,35 @@
 
                       <!-- PBR -->
                       <div id="tab02-02" class="tab-content">
-                        PBR 내용
+                        <img src="assets/images/sample/img-sample-result-chart-02.png" alt="">
                       </div>
 
                       <!-- END PBR -->
 
                       <!-- EPS -->
                       <div id="tab02-03" class="tab-content">
-                        EPS 내용
+                        <img src="assets/images/sample/img-sample-result-chart-02.png" alt="">
                       </div>
 
                       <!-- END EPS -->
 
                       <!-- ROE -->
                       <div id="tab02-04" class="tab-content">
-                        ROE 내용
+                        <img src="assets/images/sample/img-sample-result-chart-02.png" alt="">
                       </div>
 
                       <!-- END ROE -->
 
                       <!-- EV/EBITDA -->
                       <div id="tab02-05" class="tab-content">
-                        EV/EBITDA 내용
+                        <img src="assets/images/sample/img-sample-result-chart-02.png" alt="">
                       </div>
 
                       <!-- END EV/EBITDA -->
 
                       <!-- PEGR -->
                       <div id="tab02-06" class="tab-content">
-                        PEGR 내용
+                        <img src="assets/images/sample/img-sample-result-chart-02.png" alt="">
                       </div>
 
                       <!-- END PEGR -->
@@ -793,7 +795,7 @@
                           <b class="red-txt">36.88%</b>
                         </div>
                         <div class="inner-chart-area">
-                          누적 매매 외국인
+                          <img src="assets/images/sample/img-sample-result-chart-03.png" alt="">
                         </div>
                       </div>
                       <div id="tab0301-02" class="tab-content">
@@ -802,7 +804,7 @@
                           <b class="red-txt">36.88%</b>
                         </div>
                         <div class="inner-chart-area">
-                          누적 매매 기관
+                          <img src="assets/images/sample/img-sample-result-chart-03.png" alt="">
                         </div>
                       </div>
                       <div id="tab0301-03" class="tab-content">
@@ -811,7 +813,7 @@
                           <b class="red-txt">36.88%</b>
                         </div>
                         <div class="inner-chart-area">
-                          누적 매매 개인
+                          <img src="assets/images/sample/img-sample-result-chart-03.png" alt="">
                         </div>
                       </div>
                     </div>
@@ -833,7 +835,7 @@
                           <b class="red-txt">36.88%</b>
                         </div>
                         <div class="inner-chart-area">
-                          매매 동향 외국인
+                          <img src="assets/images/sample/img-sample-result-chart-03.png" alt="">
                         </div>
                       </div>
                       <div id="tab0302-02" class="tab-content">
@@ -842,7 +844,7 @@
                           <b class="red-txt">36.88%</b>
                         </div>
                         <div class="inner-chart-area">
-                          매매 동향 기관
+                          <img src="assets/images/sample/img-sample-result-chart-03.png" alt="">
                         </div>
                       </div>
                       <div id="tab0302-03" class="tab-content">
@@ -851,7 +853,7 @@
                           <b class="red-txt">36.88%</b>
                         </div>
                         <div class="inner-chart-area">
-                          개인 동향 기관
+                          <img src="assets/images/sample/img-sample-result-chart-03.png" alt="">
                         </div>
                       </div>
                     </div>
@@ -911,16 +913,6 @@
       $('.js-circle .bar').circleProgress(options).on('circle-animation-progress', function(event, progress, stepValue) {
         $(this).parent().find("b").text(Math.round(100 * stepValue) + "%");
       });
-      // 탭 구현
-      $('[data-tab]').on('click', function() {
-        var thisBtns = $(this).parent('.tabs').attr('id');
-        var thisContent = $(this).attr('data-tab');
-        var thisContents = $(`#${thisContent}`).parent('.tab-content-container').attr('id');
-        $(`#${thisBtns} > [data-tab]`).removeClass('active');
-        $(this).addClass('active');
-        $(`#${thisContents} > .tab-content`).removeClass('active');
-        $(`#${thisContent}`).addClass('active');
-      })
     </script>
   </body>
 </html>

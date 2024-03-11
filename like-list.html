@@ -68,54 +68,68 @@
         <!-- 페이지 내용 -->
         <div class="l-page-mid">
           <div class="l-page-content">
-            <div>
-              <div>
-                <button type="button" class="">
-                  <span class="txt">그룹 A (99)</span>
-                </button>
-                <button type="button" class="">
-                  <span class="txt">보유현황</span>
-                </button>
-              </div>
-              <section>
-                <div class="tbl type-03">
-                  <div class="tbl-head">
-                    <ul class="tr">
-                      <li class="th ta-left">종목명</li>
-                      <li class="th">현재가</li>
-                      <li class="th">등락(대비)</li>
-                      <li class="th">거래량</li>
-                    </ul>
-                  </div>
-                  <div class="tbl-body">
-                    <ul class="tr">
-                      <li class="td ta-left">
-                        <b class="name">KODEX 반도체</b>
-                      </li>
-                      <li class="td">
-                        <b class="blue-txt">36,095</b>
-                      </li>
-                      <li class="td">
-                        <div class="info-txt-grp blue-txt">
-                          <span class="info-txt">▼ -1.29%</span>
-                          <span class="info-txt type-sm">470</span>
-                        </div>
-                      </li>
-                      <li class="td">58,000</li>
-                    </ul>
-                  </div>
-                </div>
-              </section>
-              <div>
-                <button type="button">편집</button>
-                <button type="button">+ 관심 종목 추가</button>
-              </div>
+            <div class="top-page-btn-grp">
+              <button onclick="openModal('modal-01');" type="button" class="btn like-gray-bd-btn type-01">
+                <span class="txt">그룹 A (99)</span>
+                <i class="ico ico-like-edit"></i>
+              </button>
+              <button type="button" onclick="location.href='like-hold-list.html';" class="btn like-gray-bd-btn type-02">
+                <span class="txt">보유현황</span>
+              </button>
             </div>
+            <section class="section">
+              <div class="tbl type-04">
+                <div class="tbl-head">
+                  <ul class="tr">
+                    <li class="th ta-left">종목명</li>
+                    <li class="th">현재가</li>
+                    <li class="th">등락(대비)</li>
+                    <li class="th">거래량</li>
+                  </ul>
+                </div>
+                <div class="tbl-body">
+                  <ul class="tr">
+                    <li class="td ta-left">
+                      <b class="name">KODEX 반도체</b>
+                    </li>
+                    <li class="td">
+                      <b class="blue-txt">36,095</b>
+                    </li>
+                    <li class="td">
+                      <div class="info-txt-grp blue-txt">
+                        <span class="info-txt">▼ -1.29%</span>
+                        <span class="info-txt type-sm">470</span>
+                      </div>
+                    </li>
+                    <li class="td">58,000</li>
+                  </ul>
+                  <ul class="tr">
+                    <li class="td ta-left">
+                      <b class="name">기아</b>
+                    </li>
+                    <li class="td">
+                      <b class="blue-txt">115,095</b>
+                    </li>
+                    <li class="td">
+                      <div class="info-txt-grp red-txt">
+                        <span class="info-txt">▼ -1.29%</span>
+                        <span class="info-txt type-sm">470</span>
+                      </div>
+                    </li>
+                    <li class="td">2,159,000</li>
+                  </ul>
+                </div>
+              </div>
+            </section>
           </div>
         </div>
 
         <!-- END 페이지 내용 -->
         <div class="l-page-bottom">
+          <div class="bottom-page-btn-grp">
+            <button type="button" onclick="location.href='like-edit.html';" class="btn lightblue-solid-btn">편집</button>
+            <button type="button" onclick="location.href='like-add-search.html';" class="btn theme-solid-btn">+ 관심 종목 추가</button>
+          </div>
           <div class="nav-btns">
             <button type="button" class="nav-btn " onclick="location.href='main.html';">
               <span class="icon-box">
@@ -158,7 +172,40 @@
 
       <!-- END 관심종목 목록 페이지 -->
 
-      <!-- FIXME: 모달) 관심종목 편집 모달 -->
+      <!-- 모달) 관심종목 편집 모달 -->
+      <div id="modal-01" class="modal-wrapper">
+        <div class="modal-overlay" onclick="closeModal('modal-01');"></div>
+        <div class="custom-modal bottom-sheet-modal like-list-bottom-modal">
+          <div class="modal-ttl-wrap">
+            <h3 class="modal-ttl">관심종목</h3>
+            <button type="button" class="btn close-btn" onclick="closeModal('modal-01');">
+              <span class="txt-hidden">모달 닫기</span>
+              <i class="ico ico-x"></i>
+            </button>
+          </div>
+          <div class="modal-content-wrap">
+            <div class="btn-grp">
+
+              <!-- TODO: 활성화된 그룹이라면 active 클래스 추가 -->
+              <button type="button" class="btn gray-bd-btn active">
+                <i class="ico ico-grp-list"></i>
+                <span class="txt">그룹 A (99)</span>
+              </button>
+              <button type="button" class="btn gray-bd-btn">
+                <i class="ico ico-grp-list"></i>
+                <span class="txt">2차전지 (12)</span>
+              </button>
+              <button type="button" class="btn gray-bd-btn">
+                <i class="ico ico-grp-list"></i>
+                <span class="txt">바이오 (3)</span>
+              </button>
+            </div>
+          </div>
+          <div class="modal-btn-wrap">
+            <button type="button" onclick="location.href='like-edit.html';" class="btn btn-w100 theme-solid-btn">그룹 편집</button>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- 회원 전용 서비스 -->
