@@ -1251,6 +1251,8 @@ body {
   transition: all 0.3s;
   z-index: 1;
   width: 100%;
+  left: 0;
+  top: 0;
   height: 100%;
 }
 .checkbox-item .checkbox-inp:checked ~ .checkbox {
